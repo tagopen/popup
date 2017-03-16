@@ -1,189 +1,572 @@
 /* ---------------------------------------- */
-/* P R E L O A D E R    S T Y L E S         */
-/* ---------------------------------------- */
-.loaded #loading {
-  display: block; }
-
-#loading {
-  position: fixed;
-  display: none;
-  background-color: #17607d;
-  height: 100%;
-  width: 100%;
-  margin-top: 0px;
-  top: 0px;
-  z-index: 9999; }
-
-#loading-center {
-  width: 100%;
-  height: 100%;
-  position: relative; }
-
-#loading-center-absolute {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  height: 200px;
-  width: 200px;
-  margin-top: -100px;
-  margin-left: -100px;
-  -webkit-transform: rotate(-135deg);
-      -ms-transform: rotate(-135deg);
-          transform: rotate(-135deg); }
-
-.object {
-  -webkit-border-radius: 50% 50% 50% 50%;
-          border-radius: 50% 50% 50% 50%;
-  position: absolute;
-  border-top: 5px solid #fff;
-  border-bottom: 5px solid transparent;
-  border-left: 5px solid #fff;
-  border-right: 5px solid transparent;
-  -webkit-animation: animate 2s infinite;
-          animation: animate 2s infinite; }
-
-#object_one {
-  left: 75px;
-  top: 75px;
-  width: 50px;
-  height: 50px; }
-
-#object_two {
-  left: 65px;
-  top: 65px;
-  width: 70px;
-  height: 70px;
-  -webkit-animation-delay: 0.2s;
-          animation-delay: 0.2s; }
-
-#object_three {
-  left: 55px;
-  top: 55px;
-  width: 90px;
-  height: 90px;
-  -webkit-animation-delay: 0.4s;
-          animation-delay: 0.4s; }
-
-#object_four {
-  left: 45px;
-  top: 45px;
-  width: 110px;
-  height: 110px;
-  -webkit-animation-delay: 0.6s;
-          animation-delay: 0.6s; }
-
-@-webkit-keyframes animate {
-  50% {
-    -webkit-transform: rotate(360deg) scale(0.8);
-            transform: rotate(360deg) scale(0.8); } }
-
-@keyframes animate {
-  50% {
-    -webkit-transform: rotate(360deg) scale(0.8);
-            transform: rotate(360deg) scale(0.8); } }
-
-/* ------------------------------------------------------------------ */
-/* O L D - B R O W S E R    J R E J E C T    N O T I F I C A T I O N  */
-/* ------------------------------------------------------------------ */
-#jr_overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  margin: 0;
-  padding: 0;
-  z-index: 2147483646; }
-
-#jr_wrap {
-  position: absolute;
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  z-index: 2147483647; }
-
-#jr_header {
-  display: block;
-  margin: 0;
-  margin-bottom: 0.5em;
-  padding: 5px;
-  padding-bottom: 0;
-  font: bold 1.3em/1 Helvetica, Arial, sans-serif;
-  color: #333; }
-
-#jr_inner {
-  position: relative;
-  margin: 0 auto;
-  padding: 20px;
-  height: auto;
-  background: #FFF;
-  border: 1px solid #CCC;
-  color: #4F4F4F;
-  font: 400 12px/1 "Lucida Grande", "Lucida Sans Unicode", Arial, Verdana, sans-serif;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box; }
-  #jr_inner p {
-    padding: 5px;
-    margin: 0; }
-  #jr_inner ul {
-    margin: 0;
-    padding: 0;
-    list-style-image: none;
-    list-style-position: outside;
-    list-style-type: none; }
-    #jr_inner ul li {
-      margin: 0 10px 10px 10px;
-      padding: 0;
-      width: 120px;
-      height: 122px;
-      float: left;
-      text-align: center;
-      cursor: pointer; }
-  #jr_inner li a {
-    margin: 0;
-    padding: 0;
-    color: #333;
-    font-size: 0.8em;
-    text-decoration: none; }
-    #jr_inner li a:hover {
-      text-decoration: underline; }
-  #jr_inner .jr_icon {
-    margin: 1px auto;
-    padding: 0;
-    width: 100px;
-    height: 100px;
-    background: transparent no-repeat scroll left top;
-    cursor: pointer; }
-
-#jr_close {
-  margin: 0;
-  padding: 0;
-  clear: both; }
-  #jr_close a {
-    display: block;
-    margin: 0;
-    padding: 0;
-    width: auto;
-    color: #000;
-    text-decoration: underline; }
-  #jr_close p {
-    margin: 0;
-    padding: 10px 0 0 0; }
-
-/* ---------------------------------------- */
 /* G E N E R A L    S T Y L E               */
 /* ---------------------------------------- */
-.ic {
+@font-face {
+  font-family: "San Francisco";
+  font-weight: 100;
+  src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-ultralight-webfont.woff"); }
+
+@font-face {
+  font-family: "San Francisco";
+  font-weight: 200;
+  src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-thin-webfont.woff"); }
+
+@font-face {
+  font-family: "San Francisco";
+  font-weight: 400;
+  src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-regular-webfont.woff"); }
+
+@font-face {
+  font-family: "San Francisco";
+  font-weight: 500;
+  src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-medium-webfont.woff"); }
+
+@font-face {
+  font-family: "San Francisco";
+  font-weight: 600;
+  src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-semibold-webfont.woff"); }
+
+@font-face {
+  font-family: "San Francisco";
+  font-weight: 700;
+  src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-bold-webfont.woff"); }
+
+@media only screen and (max-width: 999px) {
+  .pp-hidden-xs {
+    display: none !important; } }
+
+@media only screen and (min-width: 1000px) {
+  .pp-hidden-lg {
+    display: none !important; } }
+
+/* ---------------------------------------- */
+/* M O D A L S    S T Y L E                 */
+/* ---------------------------------------- */
+.pp-modal {
+  position: fixed;
+  padding: 0;
+  margin: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1050;
+  display: none;
+  overflow: hidden;
+  -webkit-overflow-srolling: touch;
+  outline: 0; }
+  .pp-modal--open {
+    display: block;
+    overflow-x: hidden;
+    overflow-y: auto; }
+  .pp-modal__wrap {
+    position: relative;
+    max-width: 1000px;
+    margin: 30px auto;
+    -webkit-transform: translate(0, 25%);
+        -ms-transform: translate(0, 25%);
+            transform: translate(0, 25%);
+    -webkit-transition: -webkit-transform .3s ease-out;
+    transition: -webkit-transform .3s ease-out;
+    transition: transform .3s ease-out;
+    transition: transform .3s ease-out, -webkit-transform .3s ease-out;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box; }
+    .pp-modal__wrap--open {
+      -webkit-transform: translate(0, 0);
+          -ms-transform: translate(0, 0);
+              transform: translate(0, 0); }
+  .pp-modal__inner {
+    position: relative;
+    padding: 15px;
+    background-color: #fff;
+    background-clip: padding-box;
+    -webkit-border-radius: 5px;
+            border-radius: 5px;
+    outline: 0;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    *zoom: 1; }
+    .pp-modal__inner:after {
+      content: " ";
+      display: table;
+      clear: both; }
+  .pp-modal__body {
+    position: relative;
+    *zoom: 1;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box; }
+    .pp-modal__body:after {
+      content: " ";
+      display: table;
+      clear: both; }
+    .pp-modal__body:before {
+      content: '';
+      position: absolute;
+      display: block;
+      top: 0;
+      left: 61.64%;
+      width: 1px;
+      height: 100%;
+      background-color: #e6e6e6; }
+  .pp-modal__close {
+    position: absolute;
+    display: block;
+    padding: 0;
+    width: 22px;
+    height: 22px;
+    top: 0;
+    right: -39px;
+    background: none;
+    text-indent: -9999%;
+    overflow: hidden;
+    border: 0 none;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    opacity: .35;
+    cursor: pointer;
+    -webkit-transition: opacity .3s ease-out;
+    transition: opacity .3s ease-out;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box; }
+    .pp-modal__close:hover, .pp-modal__close:focus {
+      opacity: 1;
+      outline: none; }
+    .pp-modal__close:before, .pp-modal__close:after {
+      content: '';
+      position: absolute;
+      display: block;
+      width: 100%;
+      height: 2px;
+      top: 11px;
+      background-color: #fff;
+      -webkit-box-sizing: border-box;
+              box-sizing: border-box; }
+    .pp-modal__close:before {
+      -webkit-transform: rotate(45deg);
+          -ms-transform: rotate(45deg);
+              transform: rotate(45deg);
+      left: 0; }
+    .pp-modal__close:after {
+      -webkit-transform: rotate(-45deg);
+          -ms-transform: rotate(-45deg);
+              transform: rotate(-45deg);
+      right: 0; }
+  .pp-modal__col {
+    float: left;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box; }
+    .pp-modal__col--left {
+      position: relative;
+      width: 61.64%;
+      left: -38.36%;
+      padding: 5px 51px 5px 41px; }
+    .pp-modal__col--right {
+      position: relative;
+      width: 38.36%;
+      left: 61.64%;
+      padding: 5px 0 5px 17px; }
+
+@media only screen and (max-width: 999px) {
+  .pp-modal__wrap {
+    margin: 50px 15px; }
+  .pp-modal__close {
+    top: -39px;
+    right: 10px; }
+  .pp-modal__body:before {
+    content: none; }
+  .pp-modal__col {
+    padding: 0;
+    float: none;
+    width: 100%;
+    left: 0; }
+    .pp-modal__col--right {
+      padding-bottom: 20px;
+      border-bottom: 1px solid #e6e6e6; } }
+
+/* ---------------------------------------- */
+/* S T E P    S T Y L E                     */
+/* ---------------------------------------- */
+.tp-step {
+  padding: 0;
+  margin: 5px 0 36px;
+  list-style: none;
+  *zoom: 1;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+  .tp-step:after {
+    content: " ";
+    display: table;
+    clear: both; }
+  .tp-step__item {
+    position: relative;
+    margin-left: 36px;
+    float: left;
+    font: 400 13px/13px "San Francisco", sans-serif;
+    color: #808080;
+    text-transform: uppercase;
+    text-align: center;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box; }
+    .tp-step__item:after {
+      content: '';
+      position: absolute;
+      display: block;
+      margin: auto;
+      width: 5px;
+      height: 8px;
+      top: 0;
+      bottom: 0;
+      left: -22px;
+      background: url(../img/icons/tp-arrow-right.png) no-repeat; }
+    .tp-step__item:first-of-type {
+      margin: 0; }
+      .tp-step__item:first-of-type:after {
+        content: none; }
+    .tp-step__item--active {
+      font: 600 13px/13px "San Francisco", sans-serif;
+      color: #333; }
+  .tp-step__text--br {
+    display: block; }
+
+/* ---------------------------------------- */
+/* T I C K E T S    S T Y L E               */
+/* ---------------------------------------- */
+.st-tickets__name {
+  margin: 20px 0;
+  font: 500 20px/20px "San Francisco", sans-serif;
+  color: #333;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+
+.st-tickets__btn {
   display: inline-block;
-  vertical-align: middle;
-  text-align: center; }
-  .ic:before {
-    content: '';
+  margin-top: 20px;
+  padding: 10px;
+  width: 100%;
+  -webkit-border-radius: 5px;
+          border-radius: 5px;
+  background-image: -webkit-linear-gradient(45deg, #2e3192 0%, #01bfff 100%);
+  background-image: linear-gradient(45deg, #2e3192 0%, #01bfff 100%);
+  font: 600 13px/23px "San Francisco", sans-serif;
+  color: #fff;
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+
+.tt-ticket {
+  display: table;
+  width: 100%;
+  margin: 10px 0;
+  padding: 20px;
+  border: 1px solid #e6e6e6;
+  -webkit-border-radius: 5px;
+          border-radius: 5px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+  .tt-ticket__item {
+    display: table-cell;
+    vertical-align: middle;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box; }
+    .tt-ticket__item--left {
+      text-align: left; }
+    .tt-ticket__item--right {
+      text-align: right; }
+  .tt-ticket__quantity {
+    font: 400 18px/23px "San Francisco", sans-serif;
+    color: #3b99d3;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box; }
+  .tt-ticket__descr {
+    margin: 0;
+    font: 400 13px/23px "San Francisco", sans-serif;
+    color: #333;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box; }
+  .tt-ticket__price {
     display: inline-block;
-    vertical-align: middle; }
+    margin: 0 5px;
+    font: 600 18px/23px "San Francisco", sans-serif;
+    color: #3b99d3;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box; }
+  .tt-ticket__btn {
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 5px;
+    padding: 0;
+    width: 27px;
+    height: 27px;
+    border: 1px solid #e6e6e6;
+    background: #fff;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    -webkit-border-radius: 50%;
+            border-radius: 50%;
+    cursor: pointer;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box; }
+    .tt-ticket__btn:focus {
+      outline: none; }
+    .tt-ticket__btn--inc {
+      overflow: hidden;
+      text-indent: -9999%; }
+      .tt-ticket__btn--inc:before {
+        content: '';
+        position: absolute;
+        display: block;
+        width: 11px;
+        height: 2px;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        background-color: #e6e6e6;
+        -webkit-box-sizing: border-box;
+                box-sizing: border-box; }
+    .tt-ticket__btn--dec {
+      border: 0 none;
+      background-color: #3b99d3;
+      overflow: hidden;
+      text-indent: -9999%; }
+      .tt-ticket__btn--dec:before, .tt-ticket__btn--dec:after {
+        content: '';
+        position: absolute;
+        display: block;
+        width: 12px;
+        height: 2px;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        background-color: #fff;
+        -webkit-box-sizing: border-box;
+                box-sizing: border-box; }
+      .tt-ticket__btn--dec:after {
+        -webkit-transform: rotate(90deg);
+            -ms-transform: rotate(90deg);
+                transform: rotate(90deg); }
 
-.text-danger {
-  color: #e74c3c;
-  text-align: left; }
+.sl-select {
+  padding: 10px 30px 10px 10px;
+  -webkit-border-radius: 6px;
+          border-radius: 6px;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background: url(../img/icons/sl-arrow-down.png) no-repeat scroll 70% 50%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+  .sl-select::-ms-expand {
+    display: none; }
+  .sl-select:focus {
+    outline: none; }
 
-/* ---------------------------------------- */
-/* H O M E    P A G E    S T Y L E          */
-/* ---------------------------------------- */
+.fm-form {
+  margin: 0 -5px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+  .fm-form__group {
+    float: left;
+    padding: 0 5px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box; }
+    .fm-form__group--left {
+      width: 70%; }
+    .fm-form__group--right {
+      width: 30%; }
+  .fm-form__control {
+    padding: 0 15px;
+    width: 100%;
+    height: 40px;
+    border: 1px solid #e6e6e6;
+    font: 400 13px/23px "San Francisco", sans-serif;
+    color: #333;
+    -webkit-border-radius: 6px;
+            border-radius: 6px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box; }
+    .fm-form__control:-ms-input-placeholder {
+      color: #e6e6e6; }
+    .fm-form__control::-moz-placeholder {
+      color: #e6e6e6; }
+    .fm-form__control::-webkit-input-placeholder {
+      color: #e6e6e6; }
+    .fm-form__control::placeholder {
+      color: #e6e6e6; }
+    .fm-form__control--grey {
+      background: #d9d9d9;
+      font: 400 13px/23px "San Francisco", sans-serif;
+      color: #fff;
+      text-transform: uppercase;
+      outline: none; }
+    .fm-form__control:focus {
+      outline: none; }
+
+@media only screen and (max-width: 999px) {
+  .st-tickets__name {
+    margin: 0;
+    padding: 30px 0;
+    font: 300 15px/12px "San Francisco", sans-serif;
+    border-bottom: 1px solid #e6e6e6; }
+  .tt-ticket {
+    margin: 0;
+    padding: 20px 0;
+    -webkit-border-radius: 0;
+            border-radius: 0;
+    border-top: 0 none;
+    border-left: 0 none;
+    border-right: 0 none; } }
+
+.pr-profile {
+  *zoom: 1; }
+  .pr-profile:after {
+    content: " ";
+    display: table;
+    clear: both; }
+  .pr-profile__photo {
+    width: 30px;
+    height: 30px;
+    float: left;
+    overflow: hidden;
+    -webkit-border-radius: 50%;
+            border-radius: 50%;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box; }
+  .pr-profile__img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover; }
+  .pr-profile__name {
+    padding: 10px 17px;
+    float: left;
+    font: 300 15px/12px "San Francisco", sans-serif;
+    color: #666; }
+
+.bd-board {
+  padding-left: 45px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+  .bd-board__heading {
+    font: 400 25px/25px "San Francisco", sans-serif;
+    color: #333;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box; }
+  .bd-board__text {
+    margin: 20px 0;
+    padding-left: 22px;
+    font: 300 15px/24px "San Francisco", sans-serif;
+    color: #333;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box; }
+    .bd-board__text--time {
+      background: url(../img/icons/bd-time.png) no-repeat scroll 0 7px; }
+    .bd-board__text--place {
+      background: url(../img/icons/bd-place.png) no-repeat scroll 0 7px; }
+
+.sh-share {
+  margin: 0 -7px; }
+  .sh-share__btn {
+    display: inline-block;
+    margin: 7px 6px 8px;
+    padding: 12px 16px 12px 60px;
+    width: 212px;
+    border: 1px solid #3d5a98;
+    font: 600 13px/23px "San Francisco", sans-serif;
+    color: #3d5a98;
+    -webkit-border-radius: 5px;
+            border-radius: 5px;
+    text-decoration: none;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box; }
+    .sh-share__btn--vk {
+      border: 1px solid #4d75a3;
+      background: url(../img/icons/bd-vk.png) no-repeat scroll 15px 50%; }
+    .sh-share__btn--fb {
+      background: url(../img/icons/bd-fb.png) no-repeat scroll 15px 50%; }
+
+.tt-cart {
+  margin-top: 42px; }
+  .tt-cart__item {
+    margin: 0 17px;
+    padding: 20px 0;
+    border-top: 1px solid #e6e6e6;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box; }
+
+.ct-product__item {
+  font: 300 13px/23px "San Francisco", sans-serif;
+  color: #333;
+  *zoom: 1;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+  .ct-product__item:after {
+    content: " ";
+    display: table;
+    clear: both; }
+
+.ct-product__qty {
+  margin-right: 5px;
+  float: left;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+
+.ct-product__name {
+  float: left;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+
+.ct-product__total {
+  float: right;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+
+.tl-total {
+  *zoom: 1;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+  .tl-total:after {
+    content: " ";
+    display: table;
+    clear: both; }
+  .tl-total__name {
+    float: left;
+    font: 500 17px/23px "San Francisco", sans-serif;
+    color: #333;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box; }
+  .tl-total__price {
+    float: right;
+    font: 600 18px/23px "San Francisco", sans-serif;
+    color: #3b99d3;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box; }
+
+@media only screen and (max-width: 999px) {
+  .pr-profile__name {
+    padding: 0 20px; }
+  .bd-board__heading {
+    font: 400 20px/22px "San Francisco", sans-serif;
+    margin-top: -15px; }
+  .sh-share {
+    padding: 20px 0;
+    text-align: center; } }
+
+.oh-backdrop {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  opacity: .5;
+  z-index: 1040; }

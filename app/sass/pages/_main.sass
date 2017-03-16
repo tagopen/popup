@@ -1,6 +1,468 @@
-+comment('general style')
-+ic
-.text-danger
-  color: #e74c3c
-  text-align: left
-+comment("home page style")
++comment("General style")
+// Ultra Light
+@font-face
+  font-family: "San Francisco"
+  font-weight: 100
+  src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-ultralight-webfont.woff")
+// Thin
+@font-face
+  font-family: "San Francisco"
+  font-weight: 200
+  src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-thin-webfont.woff")
+// Regular
+@font-face
+  font-family: "San Francisco"
+  font-weight: 400
+  src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-regular-webfont.woff")
+// Medium
+@font-face
+  font-family: "San Francisco"
+  font-weight: 500
+  src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-medium-webfont.woff")
+// Semi Bold
+@font-face
+  font-family: "San Francisco"
+  font-weight: 600
+  src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-semibold-webfont.woff")
+// Bold
+@font-face
+  font-family: "San Francisco"
+  font-weight: 700
+  src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-bold-webfont.woff")
++rx(999)
+  .pp-hidden-xs
+    display: none !important
++r(1000)
+  .pp-hidden-lg
+    display: none !important
++comment("modals style")
+.pp-modal
+  position: fixed
+  padding: 0
+  margin: 0
+  top: 0
+  right: 0
+  bottom: 0
+  left: 0
+  z-index: 1050
+  display: none
+  overflow: hidden
+  -webkit-overflow-srolling: touch
+  outline: 0
+  &--open
+    display: block
+    overflow-x: hidden
+    overflow-y: auto
+  &__wrap
+    position: relative
+    max-width: 1000px
+    margin: 30px auto
+    transform: translate(0, 25%)
+    transition: transform .3s ease-out
+    +box
+    &--open
+      transform: translate(0, 0)
+  &__inner
+    position: relative
+    padding: 15px
+    background-color: $modal-body-bg
+    background-clip: padding-box
+    border-radius: 5px
+    outline: 0
+    +box
+    +clr
+  &__body
+    position: relative
+    +clr
+    +box
+    &:before
+      content: ''
+      position: absolute
+      display: block
+      top: 0
+      left: 61.64%
+      width: 1px
+      height: 100%
+      background-color: $border-default-color
+  &__close
+    position: absolute
+    display: block
+    padding: 0
+    width: 22px
+    height: 22px
+    top: 0
+    right: -39px
+    background: none
+    text-indent: -9999%
+    overflow: hidden
+    border: 0 none
+    box-shadow: none
+    opacity: .35
+    cursor: pointer
+    transition: opacity .3s ease-out
+    +box
+    &:hover,
+    &:focus
+      opacity: 1
+      outline: none
+    &:before,
+    &:after
+      content: ''
+      position: absolute
+      display: block
+      width: 100%
+      height: 2px
+      top: 11px
+      background-color: $modal-btn-close-bg
+      +box
+    &:before
+      transform: rotate(45deg)
+      left: 0
+    &:after
+      transform: rotate(-45deg)
+      right: 0
+  &__col
+    float: left
+    +box
+    &--left
+      position: relative
+      width: 61.64%
+      left: -38.36%
+      padding: 5px 51px 5px 41px
+    &--right
+      position: relative
+      width: 38.36%
+      left: 61.64%
+      padding: 5px 0 5px 17px
+
++rx(999)
+  .pp-modal
+    &__wrap
+      margin: 50px 15px
+    &__close
+      top: -39px
+      right: 10px
+    &__body
+      &:before
+        content: none
+    &__col
+      padding: 0
+      float: none
+      width: 100%
+      left: 0
+      &--right
+        padding-bottom: 20px
+        border-bottom: 1px solid $border-default-color
+
++comment('step style')
+.tp-step
+  padding: 0
+  margin: 5px 0 36px
+  +unstyled
+  +clr
+  +box
+  &__item
+    position: relative
+    margin-left: 36px
+    float: left
+    font: 400 13px/13px $main-font
+    color: $step-text-color
+    text-transform: uppercase
+    text-align: center
+    +box
+    &:after
+      content: ''
+      position: absolute
+      display: block
+      margin: auto
+      width: 5px
+      height: 8px
+      top: 0
+      bottom: 0
+      left: -22px
+      background: url(../img/icons/tp-arrow-right.png) no-repeat
+    &:first-of-type
+      margin: 0
+      &:after
+        content: none
+    &--active
+      font: 600 13px/13px $main-font
+      color: $step-text-active-color
+  &__text
+    &--br
+      display: block
++comment('tickets style')
+.st-tickets
+  &__name
+    margin: 20px 0
+    font: 500 20px/20px $main-font
+    color: $tickets-heading-color
+    +box
+  &__btn
+    display: inline-block
+    margin-top: 20px
+    padding: 10px
+    width: 100%
+    border-radius: 5px
+    background-image: $tickets-btn-bg
+    font: 600 13px/23px $main-font
+    color: $tickets-btn-color
+    text-decoration: none
+    text-align: center
+    text-transform: uppercase
+    +box
+
+.tt-ticket
+  display: table
+  width: 100%
+  margin: 10px 0
+  padding: 20px
+  border: 1px solid $border-default-color
+  border-radius: 5px
+  +box
+  &__item
+    display: table-cell
+    vertical-align: middle
+    +box
+    &--left
+      text-align: left
+    &--right
+      text-align: right
+  &__quantity
+    font: 400 18px/23px $main-font
+    color: $ticket-qty-color
+    +box
+  &__descr
+    margin: 0
+    font: 400 13px/23px $main-font
+    color: $ticket-descr-color
+    +box
+  &__price
+    display: inline-block
+    margin: 0 5px
+    font: 600 18px/23px $main-font
+    color: $ticket-price-color
+    +box
+  &__btn
+    position: relative
+    display: inline-block
+    vertical-align: top
+    margin: 0 5px
+    padding: 0
+    width: 27px
+    height: 27px
+    border: 1px solid $border-default-color
+    background: #fff
+    box-shadow: none
+    border-radius: 50%
+    cursor: pointer
+    +box
+    &:focus
+      outline: none
+    &--inc
+      overflow: hidden
+      text-indent: -9999%
+      &:before
+        content: ''
+        position: absolute
+        display: block
+        width: 11px
+        height: 2px
+        top: 0
+        bottom: 0
+        left: 0
+        right: 0
+        margin: auto
+        background-color: $ticket-btn-inc-icon-bg
+        +box
+    &--dec
+      border: 0 none
+      background-color: $ticket-btn-dec-bg
+      overflow: hidden
+      text-indent: -9999%
+      &:before,
+      &:after
+        content: ''
+        position: absolute
+        display: block
+        width: 12px
+        height: 2px
+        top: 0
+        bottom: 0
+        left: 0
+        right: 0
+        margin: auto
+        background-color: $ticket-btn-dec-icon-bg
+        +box
+      &:after
+        transform: rotate(90deg)
+.sl-select
+  padding: 10px 30px 10px 10px
+  border-radius: 6px
+  appearance: none
+  background: url(../img/icons/sl-arrow-down.png) no-repeat scroll 70% 50%
+  +box
+  &::-ms-expand
+    display: none
+  &:focus
+    outline: none
+.fm-form
+  margin: 0 -5px
+  +box
+  &__group
+    float: left
+    padding: 0 5px
+    +box
+    &--left
+      width: 70%
+    &--right
+      width: 30%
+  &__control
+    padding: 0 15px
+    width: 100%
+    height: 40px
+    border: 1px solid $border-default-color
+    font: 400 13px/23px $main-font
+    color: #333
+    border-radius: 6px
+    +box
+    +placeholder
+      color: #e6e6e6
+    &--grey
+      background: #d9d9d9
+      font: 400 13px/23px $main-font
+      color: #fff
+      text-transform: uppercase
+      outline: none
+    &:focus
+      outline: none
+  
+
+
++rx(999)
+  .st-tickets
+    &__name
+      margin: 0
+      padding: 30px 0
+      font: 300 15px/12px $main-font
+      border-bottom: 1px solid $border-default-color
+  .tt-ticket
+    margin: 0
+    padding: 20px 0
+    border-radius: 0
+    border:
+      top: 0 none
+      left: 0 none
+      right: 0 none
+.pr-profile
+  +clr
+  &__photo
+    width: 30px
+    height: 30px
+    float: left
+    overflow: hidden
+    border-radius: 50%
+    +box
+  &__img
+    width: 100%
+    height: 100%
+    object-fit: cover
+  &__name
+    padding: 10px 17px
+    float: left
+    font: 300 15px/12px $main-font
+    color: $profile-name-color
+.bd-board
+  padding-left: 45px
+  +box
+  &__heading
+    font: 400 25px/25px $main-font
+    color: $board-heading-color
+    +box
+  &__text
+    margin: 20px 0
+    padding-left: 22px
+    font: 300 15px/24px $main-font
+    color: $board-text-color
+    +box
+    &--time
+      background: url(../img/icons/bd-time.png) no-repeat scroll 0 7px
+    &--place
+      background: url(../img/icons/bd-place.png) no-repeat scroll 0 7px
+.sh-share
+  margin: 0 -7px
+  &__btn
+    display: inline-block
+    margin: 7px 6px 8px
+    padding: 12px 16px 12px 60px
+    width: 212px
+    border: 1px solid $share-btn-border
+    font: 600 13px/23px $main-font
+    color: $share-btn-color
+    border-radius: 5px
+    text-decoration: none
+    +box
+    &--vk
+      border: 1px solid $share-btn-vk-border
+      background: url(../img/icons/bd-vk.png) no-repeat scroll 15px 50%
+    &--fb
+      background: url(../img/icons/bd-fb.png) no-repeat scroll 15px 50%
+.tt-cart
+  margin-top: 42px
+  &__item
+    margin: 0 17px
+    padding: 20px 0
+    border-top: 1px solid $border-default-color
+    +box
+.ct-product
+  &__item
+    font: 300 13px/23px $main-font
+    color: $product-item-color
+    +clr
+    +box
+  &__qty
+    margin-right: 5px
+    float: left
+    +box
+  &__name
+    float: left
+    +box
+  &__total
+    float: right
+    +box
+.tl-total
+  +clr
+  +box
+  &__name
+    float: left
+    font: 500 17px/23px $main-font
+    color: $total-name-color
+    +box
+  &__price
+    float: right
+    font: 600 18px/23px $main-font
+    color: $total-price-color
+    +box
++rx(999)
+  .pr-profile
+    &__name
+      padding: 0 20px
+  .bd-board
+    &__heading
+      font: 400 20px/22px $main-font
+      margin-top: -15px
+  .sh-share
+    padding: 20px 0
+    text-align: center
+
+.oh-backdrop
+  position: absolute
+  margin: 0
+  padding: 0
+  top: 0
+  left: 0
+  width: 100%
+  height: 100%
+  background: #000
+  opacity: .5
+  z-index: 1040
