@@ -2,7 +2,10 @@ extends base/_layout.pug
 block variables
 
 block content
-  a.btn-modal(href='#pp-modal1')
+  a.btn-modal(href='#pp-modal1').sh-share__btn Modal1
+  a.btn-modal(href='#pp-modal2').sh-share__btn Modal2
+  a.btn-modal(href='#pp-modal3').sh-share__btn Modal3
+  a.btn-modal(href='#pp-modal4').sh-share__btn Modal4
 block modals
   #pp-modal1.pp-modal(tabindex='-1', role='dialog', aria-hidden='true')
     .pp-modal__wrap
@@ -124,7 +127,7 @@ block modals
             ul.pp-hidden-xs.tp-step
               li.tp-step__item.tp-step__item--active Customer information
               li.tp-step__item Ticket information
-              li.tp-step__item Payment information
+              li.tp-step__item Payment
             .pp-hidden-xs.su-signup
               .sh-share
                 a.sh-share__btn.sh-share__btn--fb-dark(href='#') Continue with Facebook
@@ -177,7 +180,7 @@ block modals
                 .fm-form__group.fm-form__group--left
                   input.fm-form__control(type='text', placeholder='Discount code')
                 .fm-form__group.fm-form__group--right
-                  input.fm-form__control.fm-form__control--grey(type='submit', value='apply')
+                  input.fm-form__control.fm-form__control--grey(value='apply')
               .pp-hidden-lg.tt-cart
                 .tt-cart__info.in-info.in-info--time
                   | Saturday, 25 March, 23:00
@@ -205,10 +208,10 @@ block modals
                   .tl-total__name Total
                   .tl-total__price.tl-total__price--black $21.58
             a.st-tickets__btn(href='#') Continue
-            .pp-hidden-xs.hh-hint Already have a KickCity account? 
+            .pp-hidden-xs.hh-hint.hh-hint--center Already have a KickCity account? 
               a.hh-hint__link(href='#') Sign In to continue
-  #pp-modal3.pp-modal.pp-modal--open(tabindex='-1', role='dialog', aria-hidden='true')
-    .pp-modal__wrap.pp-modal__wrap--open
+  #pp-modal3.pp-modal(tabindex='-1', role='dialog', aria-hidden='true')
+    .pp-modal__wrap
       .pp-modal__inner
         button.pp-modal__close(type='button', aria-hidden='true') X
         .pp-modal__body
@@ -244,7 +247,7 @@ block modals
             ul.pp-hidden-xs.tp-step
               li.tp-step__item Customer information
               li.tp-step__item.tp-step__item--active Ticket information
-              li.tp-step__item Payment information
+              li.tp-step__item Payment
 
             .pp-hidden-lg.pp-heading Select tickets
             form.fm-form(method='post', action='')
@@ -261,6 +264,57 @@ block modals
                 label.fm-form__label Phone Number
                 input.fm-form__control.fm-form__control--error(type='tel', placeholder='This field can\'t be blank')
             a.st-tickets__btn(href='#') Register
-  .oh-backdrop
+  #pp-modal4.pp-modal(tabindex='-1', role='dialog', aria-hidden='true')
+    .pp-modal__wrap
+      .pp-modal__inner
+        button.pp-modal__close(type='button', aria-hidden='true') X
+        .pp-modal__body
+          .pp-modal__col.pp-modal__col--right
+            .pr-profile
+              .pr-profile__photo
+                img.pr-profile__img(src='img/photo.jpg', alt='Artem Shatilov')
+              .pr-profile__name Artem Shatilov
+            .bd-board
+              .bd-board__heading Night Party in Local Bar
+              .pp-hidden-xs.bd-board__text.in-info.in-info--time
+                | Saturday, 25 March, 23:00
+              .pp-hidden-xs.bd-board__text.in-info.in-info--place
+                | ‘Mishka Bar’, Nab. Reki Fontanki 40, Saint-Petersburg
+              form.pp-hidden-xs.fm-form.fm-form--grey(method='post', action='')
+                .fm-form__group.fm-form__group--left
+                  input.fm-form__control(type='text', placeholder='Discount code')
+                .fm-form__group.fm-form__group--right
+                  input.fm-form__control.fm-form__control--grey(type='submit', value='apply')
+            .pp-hidden-xs.tt-cart
+              .tt-cart__item
+                .ct-product
+                  .ct-product__item
+                    .ct-product__qty 2x
+                    .pp-hidden-xs.ct-product__name Ticket type 2
+                    .pp-hidden-xs.ct-product__total $19.99
+                .ct-product
+                  .ct-product__item
+                    .ct-product__name Service charge
+                    .ct-product__total $1.59
+              .tt-cart__item.tl-total
+                .tl-total__name Total
+                .tl-total__price $21.58
+          .pp-modal__col.pp-modal__col--left
+            ul.pp-hidden-xs.tp-step
+              li.tp-step__item Customer information
+              li.tp-step__item Ticket information
+              li.tp-step__item.tp-step__item--active Payment
+            .pp-heading Checkout
+            form.fm-form(method='post', action='')
+              .fm-form__group
+                input.fm-form__control.fm-form__control--card(type='text', placeholder='Card Number')
+              .fm-form__group.fm-form__group--col
+                input.fm-form__control(type='text', placeholder='Expiry')
+              .fm-form__group.fm-form__group--col
+                input.fm-form__control(type='email', placeholder='CCV')
+
+            .hh-hint Already have a KickCity account? 
+              span.hh-hint__text artem@kickcityapp.com
+            button.st-tickets__btn(type='submit', href='#') Purchase
 
 

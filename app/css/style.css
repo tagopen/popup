@@ -33,7 +33,7 @@
 
 .pp-heading {
   margin: 20px 0;
-  font: 500 20px/20px "San Francisco", sans-serif;
+  font: 500 25px/25px "San Francisco", sans-serif;
   color: #333; }
 
 @media only screen and (max-width: 999px) {
@@ -244,6 +244,7 @@
 /* ---------------------------------------- */
 .st-tickets__name {
   margin: 20px 0;
+  font: 500 20px/20px "San Francisco", sans-serif;
   -webkit-box-sizing: border-box;
           box-sizing: border-box; }
 
@@ -254,6 +255,7 @@
   width: 100%;
   -webkit-border-radius: 5px;
           border-radius: 5px;
+  border: 0 none;
   background-image: -webkit-linear-gradient(45deg, #2e3192 0%, #01bfff 100%);
   background-image: linear-gradient(45deg, #2e3192 0%, #01bfff 100%);
   font: 600 13px/23px "San Francisco", sans-serif;
@@ -261,6 +263,7 @@
   text-decoration: none;
   text-align: center;
   text-transform: uppercase;
+  cursor: pointer;
   -webkit-box-sizing: border-box;
           box-sizing: border-box; }
 
@@ -362,13 +365,14 @@
                 transform: rotate(90deg); }
 
 .sl-select {
-  padding: 10px 30px 10px 10px;
+  padding: 10px 35px 10px 10px;
   -webkit-border-radius: 6px;
           border-radius: 6px;
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
-  background: url(../img/icons/sl-arrow-down.png) no-repeat scroll 70% 50%;
+  background: url(../img/icons/sl-arrow-down.png) no-repeat;
+  background-position: right 15px top 50%;
   -webkit-box-sizing: border-box;
           box-sizing: border-box; }
   .sl-select::-ms-expand {
@@ -390,15 +394,15 @@
   .fm-form__group {
     width: 100%;
     float: left;
-    padding: 10px 10px;
+    padding: 10px;
     -webkit-box-sizing: border-box;
             box-sizing: border-box; }
     .fm-form__group--left {
-      padding: 0 5px;
-      width: 70%; }
+      padding: 5px;
+      width: 215px; }
     .fm-form__group--right {
-      padding: 0 5px;
-      width: 30%; }
+      padding: 5px;
+      width: 215px; }
   .fm-form__label {
     font: 400 13px/15px "San Francisco", sans-serif;
     color: #808080; }
@@ -433,12 +437,20 @@
       opacity: 1;
       -webkit-transition: opacity .3s ease-out;
       transition: opacity .3s ease-out; }
+    .fm-form__control[type=submit] {
+      cursor: pointer;
+      border: 0 none; }
+    .fm-form__control--card {
+      padding-right: 53px;
+      background: url(../img/icons/fm-card.png) no-repeat;
+      background-position: right 15px top 50%; }
     .fm-form__control--grey {
       background: #d9d9d9;
       font: 400 13px/23px "San Francisco", sans-serif;
       color: #fff;
       text-transform: uppercase;
-      outline: none; }
+      outline: none;
+      text-align: center; }
     .fm-form__control--error {
       border-color: #b43838;
       -webkit-border-radius: 5px;
@@ -475,6 +487,12 @@
     border-top: 0 none;
     border-left: 0 none;
     border-right: 0 none; } }
+
+.fm-form__group--left {
+  width: 70%; }
+
+.fm-form__group--right {
+  width: 30%; }
 
 .pr-profile {
   *zoom: 1; }
@@ -665,12 +683,15 @@
   width: 50%; }
 
 .hh-hint {
-  margin-top: 60px;
+  margin-top: 10px;
   font: 400 13px/23px "San Francisco", sans-serif;
   color: #808080;
-  text-align: center;
+  text-align: left;
   -webkit-box-sizing: border-box;
           box-sizing: border-box; }
+  .hh-hint--center {
+    margin-top: 60px;
+    text-align: center; }
   .hh-hint__link {
     font: 600 13px/23px "San Francisco", sans-serif;
     color: #3b99d3;
@@ -681,6 +702,9 @@
             box-sizing: border-box; }
     .hh-hint__link:hover, .hh-hint__link:focus {
       color: #3d5a98; }
+  .hh-hint__text {
+    font: 600 13px/23px "San Francisco", sans-serif;
+    color: #333; }
 
 .tt-ticket__quantity--black {
   color: #333; }

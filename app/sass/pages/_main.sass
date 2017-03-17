@@ -31,7 +31,7 @@
   src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-bold-webfont.woff")
 .pp-heading
   margin: 20px 0
-  font: 500 20px/20px $main-font
+  font: 500 25px/25px $main-font
   color: $tickets-heading-color
 +rx(999)
   .pp-heading
@@ -203,6 +203,7 @@
 .st-tickets
   &__name
     margin: 20px 0
+    font: 500 20px/20px $main-font
     +box
   &__btn
     display: inline-block
@@ -210,13 +211,17 @@
     padding: 10px
     width: 100%
     border-radius: 5px
+    border: 0 none
     background-image: $tickets-btn-bg
     font: 600 13px/23px $main-font
     color: $tickets-btn-color
     text-decoration: none
     text-align: center
     text-transform: uppercase
+    cursor: pointer
     +box
+    &:focus
+      outline none
 
 .tt-ticket
   display: table
@@ -303,10 +308,11 @@
       &:after
         transform: rotate(90deg)
 .sl-select
-  padding: 10px 30px 10px 10px
+  padding: 10px 35px 10px 10px
   border-radius: 6px
   appearance: none
-  background: url(../img/icons/sl-arrow-down.png) no-repeat scroll 70% 50%
+  background: url(../img/icons/sl-arrow-down.png) no-repeat
+  background-position: right 15px top 50%
   +box
   &::-ms-expand
     display: none
@@ -321,14 +327,14 @@
   &__group
     width: 100%
     float: left
-    padding: 10px 10px
+    padding: 10px
     +box
     &--left
-      padding: 0 5px
-      width: 70%
+      padding: 5px
+      width: 215px
     &--right
-      padding: 0 5px
-      width: 30%
+      padding: 5px
+      width: 215px
   &__label
     font: 400 13px/15px $main-font
     color: $form-label-color
@@ -345,12 +351,22 @@
       color: $form-control-placeholder-color
       opacity: 1
       transition: opacity .3s ease-out
+    &[type=submit]
+      cursor: pointer
+      border: 0 none
+      &:focus
+        outline none
+    &--card
+      padding-right: 53px
+      background: url(../img/icons/fm-card.png) no-repeat
+      background-position: right 15px top 50%
     &--grey
       background: $form-control-submit-bg
       font: 400 13px/23px $main-font
       color: #fff
       text-transform: uppercase
       outline: none
+      text-align: center
     &--error
       border-color: $form-error-color
       border-radius: 5px
@@ -374,6 +390,13 @@
       top: 0 none
       left: 0 none
       right: 0 none
+
+.fm-form
+  &__group
+    &--left
+      width: 70%
+    &--right
+      width: 30%
 .pr-profile
   +clr
   &__photo
@@ -524,10 +547,13 @@
     &--col
       width: 50%
 .hh-hint
-  margin-top: 60px
+  margin-top: 10px
   font: 400 13px/23px $main-font
   color: $hint-color
-  text-align: center
+  text-align: left
+  &--center
+    margin-top: 60px
+    text-align: center
   +box
   &__link
     font: 600 13px/23px $main-font
@@ -538,6 +564,9 @@
     &:hover,
     &:focus
       color: $hint-link-color-hover
+  &__text
+    font: 600 13px/23px $main-font
+    color: $hint-text-color
 .tt-ticket
   &__quantity
     &--black
