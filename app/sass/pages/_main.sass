@@ -310,6 +310,7 @@
 .fm-form
   margin: 0 -10px
   +box
+  +clr
   &--grey
     margin: 0 -5px
   &__group
@@ -384,16 +385,16 @@
     font: 400 25px/25px $main-font
     color: $board-heading-color
     +box
-  &__text
-    margin: 20px 0
-    padding-left: 22px
-    font: 300 15px/24px $main-font
-    color: $board-text-color
-    +box
-    &--time
-      background: url(../img/icons/bd-time.png) no-repeat scroll 0 7px
-    &--place
-      background: url(../img/icons/bd-place.png) no-repeat scroll 0 7px
+.in-info
+  margin: 20px 0
+  padding-left: 22px
+  font: 300 15px/24px $main-font
+  color: $board-text-color
+  +box
+  &--time
+    background: url(../img/icons/bd-time.png) no-repeat scroll 0 7px
+  &--place
+    background: url(../img/icons/bd-place.png) no-repeat scroll 0 7px
 .sh-share
   margin: 0 -10px
   &__btn
@@ -455,6 +456,8 @@
     color: $total-price-color
     +box
 +rx(999)
+  .tt-cart
+    margin-top: 20px
   .pr-profile
     &__name
       padding: 0 20px
@@ -533,6 +536,8 @@
     &--bottom
       border-top: 0 none
       border-bottom: 1px solid $border-default-color
+  &__info
+    margin: 0
 .tl-total
   &__price
     &--black

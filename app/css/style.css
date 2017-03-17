@@ -374,7 +374,12 @@
 .fm-form {
   margin: 0 -10px;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box; }
+          box-sizing: border-box;
+  *zoom: 1; }
+  .fm-form:after {
+    content: " ";
+    display: table;
+    clear: both; }
   .fm-form--grey {
     margin: 0 -5px; }
   .fm-form__group {
@@ -466,17 +471,18 @@
     color: #333;
     -webkit-box-sizing: border-box;
             box-sizing: border-box; }
-  .bd-board__text {
-    margin: 20px 0;
-    padding-left: 22px;
-    font: 300 15px/24px "San Francisco", sans-serif;
-    color: #333;
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box; }
-    .bd-board__text--time {
-      background: url(../img/icons/bd-time.png) no-repeat scroll 0 7px; }
-    .bd-board__text--place {
-      background: url(../img/icons/bd-place.png) no-repeat scroll 0 7px; }
+
+.in-info {
+  margin: 20px 0;
+  padding-left: 22px;
+  font: 300 15px/24px "San Francisco", sans-serif;
+  color: #333;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+  .in-info--time {
+    background: url(../img/icons/bd-time.png) no-repeat scroll 0 7px; }
+  .in-info--place {
+    background: url(../img/icons/bd-place.png) no-repeat scroll 0 7px; }
 
 .sh-share {
   margin: 0 -10px; }
@@ -563,6 +569,8 @@
             box-sizing: border-box; }
 
 @media only screen and (max-width: 999px) {
+  .tt-cart {
+    margin-top: 20px; }
   .pr-profile__name {
     padding: 0 20px; }
   .bd-board__heading {
@@ -643,6 +651,9 @@
 .tt-cart__item--bottom {
   border-top: 0 none;
   border-bottom: 1px solid #e6e6e6; }
+
+.tt-cart__info {
+  margin: 0; }
 
 .tl-total__price--black {
   color: #333; }
