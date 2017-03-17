@@ -29,13 +29,20 @@
   font-family: "San Francisco"
   font-weight: 700
   src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-bold-webfont.woff")
+.pp-heading
+  margin: 20px 0
+  font: 500 20px/20px $main-font
+  color: $tickets-heading-color
 +rx(999)
+  .pp-heading
+    font: 300 15px/12px $main-font
   .pp-hidden-xs
     display: none !important
 +r(1000)
   .pp-hidden-lg
     display: none !important
 +comment("modals style")
+
 +comment('first modal style')
 .pp-modal
   position: fixed
@@ -196,8 +203,6 @@
 .st-tickets
   &__name
     margin: 20px 0
-    font: 500 20px/20px $main-font
-    color: $tickets-heading-color
     +box
   &__btn
     display: inline-block
@@ -314,8 +319,9 @@
   &--grey
     margin: 0 -5px
   &__group
+    width: 100%
     float: left
-    padding: 5px 10px
+    padding: 10px 10px
     +box
     &--left
       padding: 0 5px
@@ -323,34 +329,42 @@
     &--right
       padding: 0 5px
       width: 30%
+  &__label
+    font: 400 13px/15px $main-font
+    color: $form-label-color
   &__control
     padding: 0 15px
     width: 100%
     height: 40px
     border: 1px solid $border-default-color
-    font: 400 13px/23px $main-font
+    font: 400 15px/23px $main-font
     color: $form-control-color
     border-radius: 6px
     +box
     +placeholder
       color: $form-control-placeholder-color
+      opacity: 1
+      transition: opacity .3s ease-out
     &--grey
       background: $form-control-submit-bg
       font: 400 13px/23px $main-font
       color: #fff
       text-transform: uppercase
       outline: none
+    &--error
+      border-color: $form-error-color
+      border-radius: 5px
+      +placeholder
+        color: $form-error-color
     &:focus
       outline: none
-  
-
-
+      +placeholder
+        opacity: 0
 +rx(999)
   .st-tickets
     &__name
       margin: 0
       padding: 30px 0
-      font: 300 15px/12px $main-font
       border-bottom: 1px solid $border-default-color
   .tt-ticket
     margin: 0

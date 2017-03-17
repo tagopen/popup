@@ -57,7 +57,7 @@
                 <li class="tp-step__item">Payment <span class="tp-step__text tp-step__text--br">information</span></li>
               </ul>
               <div class="st-tickets">
-                <div class="st-tickets__name">Select tickets</div>
+                <div class="st-tickets__name pp-heading">Select tickets</div>
                 <div class="st-tickets__item tt-ticket">
                   <div class="tt-ticket__item tt-ticket__item--left">
                     <div class="tt-ticket__name">Ticket type 1</div>
@@ -109,8 +109,8 @@
         </div>
       </div>
     </div>
-    <div class="pp-modal pp-modal--open" id="pp-modal2" tabindex="-1" role="dialog" aria-hidden="true">
-      <div class="pp-modal__wrap pp-modal__wrap--open">
+    <div class="pp-modal" id="pp-modal2" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="pp-modal__wrap">
         <div class="pp-modal__inner">
           <button class="pp-modal__close" type="button" aria-hidden="true">X</button>
           <div class="pp-modal__body">
@@ -172,7 +172,7 @@
                 </form>
               </div>
               <div class="pp-hidden-lg st-tickets">
-                <div class="st-tickets__name">Select tickets</div>
+                <div class="st-tickets__name pp-heading">Select tickets</div>
                 <div class="st-tickets__item tt-ticket">
                   <div class="tt-ticket__item tt-ticket__item--left">
                     <div class="tt-ticket__name">Ticket type 1</div>
@@ -257,6 +257,74 @@
                 </div>
               </div><a class="st-tickets__btn" href="#">Continue</a>
               <div class="pp-hidden-xs hh-hint">Already have a KickCity account? <a class="hh-hint__link" href="#">Sign In to continue</a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="pp-modal pp-modal--open" id="pp-modal3" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="pp-modal__wrap pp-modal__wrap--open">
+        <div class="pp-modal__inner">
+          <button class="pp-modal__close" type="button" aria-hidden="true">X</button>
+          <div class="pp-modal__body">
+            <div class="pp-modal__col pp-modal__col--right">
+              <div class="pr-profile">
+                <div class="pr-profile__photo"><img class="pr-profile__img" src="img/photo.jpg" alt="Artem Shatilov"></div>
+                <div class="pr-profile__name">Artem Shatilov</div>
+              </div>
+              <div class="bd-board">
+                <div class="bd-board__heading">Night Party in Local Bar</div>
+                <div class="pp-hidden-xs bd-board__text in-info in-info--time">Saturday, 25 March, 23:00</div>
+                <div class="pp-hidden-xs bd-board__text in-info in-info--place">‘Mishka Bar’, Nab. Reki Fontanki 40, Saint-Petersburg</div>
+                <div class="pp-hidden-xs sh-share"><a class="sh-share__btn sh-share__btn--fb" href="#">Share for 5% off</a><a class="sh-share__btn sh-share__btn--vk" href="#">Share for 5% off</a></div>
+              </div>
+              <div class="pp-hidden-xs tt-cart">
+                <div class="tt-cart__item">
+                  <div class="ct-product">
+                    <div class="ct-product__item">
+                      <div class="ct-product__qty">2x</div>
+                      <div class="pp-hidden-xs ct-product__name">Ticket type 2</div>
+                      <div class="pp-hidden-xs ct-product__total">$19.99</div>
+                    </div>
+                  </div>
+                  <div class="ct-product">
+                    <div class="ct-product__item">
+                      <div class="ct-product__name">Service charge</div>
+                      <div class="ct-product__total">$1.59</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tt-cart__item tl-total">
+                  <div class="tl-total__name">Total</div>
+                  <div class="tl-total__price">$21.58</div>
+                </div>
+              </div>
+            </div>
+            <div class="pp-modal__col pp-modal__col--left">
+              <ul class="pp-hidden-xs tp-step">
+                <li class="tp-step__item">Customer information</li>
+                <li class="tp-step__item tp-step__item--active">Ticket information</li>
+                <li class="tp-step__item">Payment information</li>
+              </ul>
+              <div class="pp-hidden-lg pp-heading">Select tickets</div>
+              <form class="fm-form" method="post" action="">
+                <div class="fm-form__group">
+                  <label class="fm-form__label">Buyer information</label>
+                  <input class="fm-form__control" type="text" placeholder="First Name">
+                </div>
+                <div class="fm-form__group">
+                  <label class="fm-form__label">Last Name</label>
+                  <input class="fm-form__control" type="text" placeholder="Last Name">
+                </div>
+                <div class="fm-form__group">
+                  <label class="fm-form__label">Email</label>
+                  <input class="fm-form__control" type="email" placeholder="Email">
+                </div>
+                <div class="fm-form__group">
+                  <label class="fm-form__label">Phone Number</label>
+                  <input class="fm-form__control fm-form__control--error" type="tel" placeholder="This field can't be blank">
+                </div>
+              </form><a class="st-tickets__btn" href="#">Register</a>
             </div>
           </div>
         </div>
