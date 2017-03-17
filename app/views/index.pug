@@ -2,10 +2,10 @@ extends base/_layout.pug
 block variables
 
 block content
-  a.btn-modal(href='#pp-modal1').sh-share__btn Modal1
-  a.btn-modal(href='#pp-modal2').sh-share__btn Modal2
-  a.btn-modal(href='#pp-modal3').sh-share__btn Modal3
-  a.btn-modal(href='#pp-modal4').sh-share__btn Modal4
+  a.pp-modal-link(href='#pp-modal1').sh-share__btn Modal1
+  a.pp-modal-link(href='#pp-modal2').sh-share__btn Modal2
+  a.pp-modal-link(href='#pp-modal3').sh-share__btn Modal3
+  a.pp-modal-link(href='#pp-modal4').sh-share__btn Modal4
 block modals
   #pp-modal1.pp-modal(tabindex='-1', role='dialog', aria-hidden='true')
     .pp-modal__wrap
@@ -316,5 +316,3 @@ block modals
             .hh-hint Already have a KickCity account? 
               span.hh-hint__text artem@kickcityapp.com
             button.st-tickets__btn(type='submit', href='#') Purchase
-
-

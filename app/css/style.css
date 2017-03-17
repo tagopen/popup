@@ -724,6 +724,7 @@
 
 .oh-backdrop {
   position: absolute;
+  display: none;
   margin: 0;
   padding: 0;
   top: 0;

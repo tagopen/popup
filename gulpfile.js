@@ -21,7 +21,7 @@ gulp.task('sass', function() {
 
 gulp.task('scripts', ['bower'], function() {
   return gulp.src([
-      //'bower_components/jquery/dist/jquery.js'
+      'bower_components/query-1.8/jquery.js'
     ])
   .pipe($.plumber())
   .pipe(gulp.dest('app/js'));
