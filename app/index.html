@@ -11,8 +11,8 @@
     <!-- endbuild-->
   </head>
   <body><a class="btn-modal" href="#pp-modal1"></a>
-    <div class="pp-modal pp-modal--open" id="pp-modal1" tabindex="-1" role="dialog" aria-hidden="true">
-      <div class="pp-modal__wrap pp-modal__wrap--open">
+    <div class="pp-modal" id="pp-modal1" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="pp-modal__wrap">
         <div class="pp-modal__inner">
           <button class="pp-modal__close" type="button" aria-hidden="true">X</button>
           <div class="pp-modal__body">
@@ -28,15 +28,19 @@
                 <div class="pp-hidden-xs sh-share"><a class="sh-share__btn sh-share__btn--fb" href="#">Share for 5% off</a><a class="sh-share__btn sh-share__btn--vk" href="#">Share for 5% off</a></div>
               </div>
               <div class="pp-hidden-xs tt-cart">
-                <div class="tt-cart__item ct-product">
-                  <div class="ct-product__item">
-                    <div class="ct-product__qty">2x</div>
-                    <div class="pp-hidden-xs ct-product__name">Ticket type 2</div>
-                    <div class="pp-hidden-xs ct-product__total">$19.99</div>
+                <div class="tt-cart__item">
+                  <div class="ct-product">
+                    <div class="ct-product__item">
+                      <div class="ct-product__qty">2x</div>
+                      <div class="pp-hidden-xs ct-product__name">Ticket type 2</div>
+                      <div class="pp-hidden-xs ct-product__total">$19.99</div>
+                    </div>
                   </div>
-                  <div class="ct-product__item">
-                    <div class="ct-product__name">Service charge</div>
-                    <div class="ct-product__total">$1.59</div>
+                  <div class="ct-product">
+                    <div class="ct-product__item">
+                      <div class="ct-product__name">Service charge</div>
+                      <div class="ct-product__total">$1.59</div>
+                    </div>
                   </div>
                 </div>
                 <div class="tt-cart__item tl-total">
@@ -91,7 +95,7 @@
                   </div>
                 </div>
                 <div class="pp-hidden-lg sh-share"><a class="sh-share__btn sh-share__btn--fb" href="#">Share for 5% off</a><a class="sh-share__btn sh-share__btn--vk" href="#">Share for 5% </a></div>
-                <form class="pp-hidden-lg fm-form" method="post" action="">
+                <form class="pp-hidden-lg fm-form fm-form--grey" method="post" action="">
                   <div class="fm-form__group fm-form__group--left">
                     <input class="fm-form__control" type="text" placeholder="Discount code">
                   </div>
@@ -100,6 +104,158 @@
                   </div>
                 </form>
               </div><a class="st-tickets__btn" href="#">Continue</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="pp-modal pp-modal--open" id="pp-modal2" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="pp-modal__wrap pp-modal__wrap--open">
+        <div class="pp-modal__inner">
+          <button class="pp-modal__close" type="button" aria-hidden="true">X</button>
+          <div class="pp-modal__body">
+            <div class="pp-modal__col pp-modal__col--right">
+              <div class="pr-profile">
+                <div class="pr-profile__photo"><img class="pr-profile__img" src="img/photo.jpg" alt="Artem Shatilov"></div>
+                <div class="pr-profile__name">Artem Shatilov</div>
+              </div>
+              <div class="bd-board">
+                <div class="bd-board__heading">Night Party in Local Bar</div>
+                <div class="pp-hidden-xs bd-board__text bd-board__text--time">Saturday, 25 March, 23:00</div>
+                <div class="pp-hidden-xs bd-board__text bd-board__text--place">‘Mishka Bar’, Nab. Reki Fontanki 40, Saint-Petersburg</div>
+                <div class="pp-hidden-xs sh-share"><a class="sh-share__btn sh-share__btn--fb" href="#">Share for 5% off</a><a class="sh-share__btn sh-share__btn--vk" href="#">Share for 5% off</a></div>
+              </div>
+              <div class="pp-hidden-xs tt-cart">
+                <div class="tt-cart__item">
+                  <div class="ct-product">
+                    <div class="ct-product__item">
+                      <div class="ct-product__qty">2x</div>
+                      <div class="pp-hidden-xs ct-product__name">Ticket type 2</div>
+                      <div class="pp-hidden-xs ct-product__total">$19.99</div>
+                    </div>
+                  </div>
+                  <div class="ct-product">
+                    <div class="ct-product__item">
+                      <div class="ct-product__name">Service charge</div>
+                      <div class="ct-product__total">$1.59</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tt-cart__item tl-total">
+                  <div class="tl-total__name">Total</div>
+                  <div class="tl-total__price">$21.58</div>
+                </div>
+              </div>
+            </div>
+            <div class="pp-modal__col pp-modal__col--left">
+              <ul class="pp-hidden-xs tp-step">
+                <li class="tp-step__item tp-step__item--active">Customer information</li>
+                <li class="tp-step__item">Ticket information</li>
+                <li class="tp-step__item">Payment information</li>
+              </ul>
+              <div class="pp-hidden-xs su-signup">
+                <div class="sh-share"><a class="sh-share__btn sh-share__btn--fb-dark" href="#">Continue with Facebook</a><a class="sh-share__btn sh-share__btn--vk-dark" href="#">Continue with VK</a></div>
+                <div class="dl-delimiter">Or</div>
+                <form class="pp-hidden-xs fm-form" method="post" action="">
+                  <div class="fm-form__group fm-form__group--col">
+                    <input class="fm-form__control" type="text" placeholder="First Name">
+                  </div>
+                  <div class="fm-form__group fm-form__group--col">
+                    <input class="fm-form__control" type="text" placeholder="Last Name">
+                  </div>
+                  <div class="fm-form__group fm-form__group--col">
+                    <input class="fm-form__control" type="email" placeholder="Email">
+                  </div>
+                  <div class="fm-form__group fm-form__group--col">
+                    <input class="fm-form__control" type="password" placeholder="Password">
+                  </div>
+                </form>
+              </div>
+              <div class="pp-hidden-lg st-tickets">
+                <div class="st-tickets__name">Select tickets</div>
+                <div class="st-tickets__item tt-ticket">
+                  <div class="tt-ticket__item tt-ticket__item--left">
+                    <div class="tt-ticket__name">Ticket type 1</div>
+                    <p class="tt-ticket__descr">Some information</p>
+                  </div>
+                  <div class="tt-ticket__item tt-ticket__item--right"><span class="tt-ticket__price">$9.99</span>
+                    <button class="pp-hidden-xs tt-ticket__btn"></button>
+                    <select class="pp-hidden-lg tt-ticket__select sl-select">
+                      <option class="sl-select__option" value="1">1</option>
+                      <option class="sl-select__option" value="2">2</option>
+                      <option class="sl-select__option" value="3">3</option>
+                      <option class="sl-select__option" value="4">4</option>
+                      <option class="sl-select__option" value="5">5</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="st-tickets__item tt-ticket">
+                  <div class="pp-hidden-xs tt-ticket__item tt-ticket__item--left">
+                    <div class="tt-ticket__quantity">2x</div>
+                  </div>
+                  <div class="tt-ticket__item tt-ticket__item--left">
+                    <div class="tt-ticket__name">Ticket type 2</div>
+                    <p class="tt-ticket__descr">Some information</p>
+                  </div>
+                  <div class="tt-ticket__item tt-ticket__item--right"><span class="tt-ticket__price">$19.99</span>
+                    <button class="pp-hidden-xs tt-ticket__btn tt-ticket__btn--inc">-</button>
+                    <button class="pp-hidden-xs tt-ticket__btn tt-ticket__btn--dec">+</button>
+                    <select class="pp-hidden-lg tt-ticket__select sl-select">
+                      <option class="sl-select__option" value="1">1</option>
+                      <option class="sl-select__option" value="2">2</option>
+                      <option class="sl-select__option" value="3">3</option>
+                      <option class="sl-select__option" value="4">4</option>
+                      <option class="sl-select__option" value="5">5</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="pp-hidden-lg sh-share"><a class="sh-share__btn sh-share__btn--fb" href="#">Share for 5% off</a><a class="sh-share__btn sh-share__btn--vk" href="#">Share for 5% </a></div>
+                <form class="pp-hidden-lg fm-form fm-form--grey" method="post" action="">
+                  <div class="fm-form__group fm-form__group--left">
+                    <input class="fm-form__control" type="text" placeholder="Discount code">
+                  </div>
+                  <div class="fm-form__group fm-form__group--right">
+                    <input class="fm-form__control fm-form__control--grey" type="submit" value="apply">
+                  </div>
+                </form>
+                <div class="pp-hidden-lg tt-cart">
+                  <div class="st-tickets">
+                    <div class="st-tickets__item tt-ticket">
+                      <div class="tt-ticket__item tt-ticket__item--left">
+                        <div class="tt-ticket__quantity tt-ticket__quantity--black">2 x</div>
+                      </div>
+                      <div class="tt-ticket__item tt-ticket__item--left">
+                        <div class="tt-ticket__name">Ticket type 2</div>
+                        <p class="tt-ticket__descr">Some information</p>
+                      </div>
+                      <div class="tt-ticket__item tt-ticket__item--right"><span class="tt-ticket__price tt-ticket__price--black">$19.99</span></div>
+                    </div>
+                  </div>
+                  <div class="tt-cart__item tt-cart__item--bottom">
+                    <div class="ct-product">
+                      <div class="ct-product__item">
+                        <div class="ct-product__name">Subtotal</div>
+                      </div>
+                      <div class="ct-product__item">
+                        <div class="ct-product__total">$9.99</div>
+                      </div>
+                    </div>
+                    <div class="ct-product">
+                      <div class="ct-product__item">
+                        <div class="ct-product__name">Service charge</div>
+                      </div>
+                      <div class="ct-product__item">
+                        <div class="ct-product__total">$0.80</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="tt-cart__item tt-cart__item--bottom tl-total">
+                    <div class="tl-total__name">Total</div>
+                    <div class="tl-total__price tl-total__price--black">$21.58</div>
+                  </div>
+                </div>
+              </div><a class="st-tickets__btn" href="#">Continue</a>
+              <div class="pp-hidden-xs hh-hint">Already have a KickCity account? <a class="hh-hint__link" href="#">Sign In to continue</a></div>
             </div>
           </div>
         </div>

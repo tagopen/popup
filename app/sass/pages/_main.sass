@@ -36,6 +36,7 @@
   .pp-hidden-lg
     display: none !important
 +comment("modals style")
++comment('first modal style')
 .pp-modal
   position: fixed
   padding: 0
@@ -200,7 +201,7 @@
     +box
   &__btn
     display: inline-block
-    margin-top: 20px
+    margin-top: 38px
     padding: 10px
     width: 100%
     border-radius: 5px
@@ -307,15 +308,19 @@
   &:focus
     outline: none
 .fm-form
-  margin: 0 -5px
+  margin: 0 -10px
   +box
+  &--grey
+    margin: 0 -5px
   &__group
     float: left
-    padding: 0 5px
+    padding: 5px 10px
     +box
     &--left
+      padding: 0 5px
       width: 70%
     &--right
+      padding: 0 5px
       width: 30%
   &__control
     padding: 0 15px
@@ -323,13 +328,13 @@
     height: 40px
     border: 1px solid $border-default-color
     font: 400 13px/23px $main-font
-    color: #333
+    color: $form-control-color
     border-radius: 6px
     +box
     +placeholder
-      color: #e6e6e6
+      color: $form-control-placeholder-color
     &--grey
-      background: #d9d9d9
+      background: $form-control-submit-bg
       font: 400 13px/23px $main-font
       color: #fff
       text-transform: uppercase
@@ -390,32 +395,38 @@
     &--place
       background: url(../img/icons/bd-place.png) no-repeat scroll 0 7px
 .sh-share
-  margin: 0 -7px
+  margin: 0 -10px
   &__btn
     display: inline-block
-    margin: 7px 6px 8px
-    padding: 12px 16px 12px 60px
-    width: 212px
+    margin: 7px 10px 8px
+    padding: 9px 16px 9px 60px
+    width: 242px
     border: 1px solid $share-btn-border
     font: 600 13px/23px $main-font
     color: $share-btn-color
-    border-radius: 5px
+    border-radius: 7px
     text-decoration: none
     +box
     &--vk
-      border: 1px solid $share-btn-vk-border
+      border: 1px solid $share-btn-vk
       background: url(../img/icons/bd-vk.png) no-repeat scroll 15px 50%
     &--fb
+      border: 1px solid $share-btn-fb
       background: url(../img/icons/bd-fb.png) no-repeat scroll 15px 50%
 .tt-cart
   margin-top: 42px
+  +box
   &__item
-    margin: 0 17px
     padding: 20px 0
     border-top: 1px solid $border-default-color
     +box
 .ct-product
+  display: table
+  width: 100%
+  +box
   &__item
+    display: table-cell
+    vertical-align: middle
     font: 300 13px/23px $main-font
     color: $product-item-color
     +clr
@@ -454,6 +465,78 @@
   .sh-share
     padding: 20px 0
     text-align: center
++comment('second modal style')
+.sh-share
+  &__btn
+    &--fb-dark
+      border: 1px solid $share-btn-fb
+      background: $share-btn-fb url(../img/icons/bd-fb-lg.png) no-repeat scroll 0 50%
+      color: $share-btn-dark-color
+    &--vk-dark
+      border: 1px solid $share-btn-vk
+      background: $share-btn-vk url(../img/icons/bd-vk-lg.png) no-repeat scroll 0 50%
+      color: $share-btn-dark-color
+.dl-delimiter
+  position: relative
+  width: 235px
+  margin: 5px auto
+  overflow: hidden
+  color: $delimiter-color
+  font: 400 13px/23px $main-font
+  text-transform: uppercase
+  text-align: center
+  +box
+  &:before,
+  &:after
+    content: ''
+    position: absolute
+    display: block
+    width: 92px
+    height: 1px
+    top: 0
+    bottom: 0
+    margin: auto
+    background-color: $delimiter-border
+    +box
+  &:before
+    left: 0
+  &:after
+    right: 0
+.fm-form
+  &__group
+    &--col
+      width: 50%
+.hh-hint
+  margin-top: 60px
+  font: 400 13px/23px $main-font
+  color: $hint-color
+  text-align: center
+  +box
+  &__link
+    font: 600 13px/23px $main-font
+    color: $hint-link-color
+    text-decoration: none
+    transition: color .3s ease-out
+    +box
+    &:hover,
+    &:focus
+      color: $hint-link-color-hover
+.tt-ticket
+  &__quantity
+    &--black
+      color: $total-name-color
+  &__price
+    &--black
+      color: $total-name-color
+.tt-cart
+  &__item
+    &--bottom
+      border-top: 0 none
+      border-bottom: 1px solid $border-default-color
+.tl-total
+  &__price
+    &--black
+      color: $total-name-color
 
 .oh-backdrop
   position: absolute
