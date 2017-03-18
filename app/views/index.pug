@@ -30,7 +30,7 @@ block modals
               .tt-cart__item
                 .ct-product
                   .ct-product__item
-                    .ct-product__qty 2x
+                    .ct-product__qty 2 x
                     .pp-hidden-xs.ct-product__name Ticket type 2
                     .pp-hidden-xs.ct-product__total $19.99
                 .ct-product
@@ -86,7 +86,7 @@ block modals
                 a.sh-share__btn.sh-share__btn--vk(href='#') Share for 5% 
               form.pp-hidden-lg.fm-form.fm-form--grey(method='post', action='')
                 .fm-form__group.fm-form__group--left
-                  input.fm-form__control(type='text', placeholder='Discount code')
+                  input.fm-form__control(type='text', placeholder='Discount Code')
                 .fm-form__group.fm-form__group--right
                   input.fm-form__control.fm-form__control--grey(type='submit', value='apply')
             a.st-tickets__btn(href='#') Continue
@@ -113,7 +113,7 @@ block modals
               .tt-cart__item
                 .ct-product
                   .ct-product__item
-                    .ct-product__qty 2x
+                    .ct-product__qty 2 x
                     .pp-hidden-xs.ct-product__name Ticket type 2
                     .pp-hidden-xs.ct-product__total $19.99
                 .ct-product
@@ -124,14 +124,14 @@ block modals
                 .tl-total__name Total
                 .tl-total__price $21.58
           .pp-modal__col.pp-modal__col--left
-            ul.pp-hidden-xs.tp-step
+            ul.pp-hidden-xs.tp-step.tp-step--inside
               li.tp-step__item.tp-step__item--active Customer information
               li.tp-step__item Ticket information
               li.tp-step__item Payment
             .pp-hidden-xs.su-signup
-              .sh-share
-                a.sh-share__btn.sh-share__btn--fb-dark(href='#') Continue with Facebook
-                a.sh-share__btn.sh-share__btn--vk-dark(href='#') Continue with VK
+              .sh-share.sh-share--inside
+                a.sh-share__btn.bt-btn-dark.bt-btn-dark--fb(href='#') Continue with Facebook
+                a.sh-share__btn.bt-btn-dark.bt-btn-dark--vk(href='#') Continue with VK
               .dl-delimiter Or
               form.pp-hidden-xs.fm-form(method='post', action='')
                 .fm-form__group.fm-form__group--col
@@ -159,7 +159,7 @@ block modals
                     option.sl-select__option(value='5') 5
               .st-tickets__item.tt-ticket
                 .pp-hidden-xs.tt-ticket__item.tt-ticket__item--left
-                  .tt-ticket__quantity 2x
+                  .tt-ticket__quantity 2 x
                 .tt-ticket__item.tt-ticket__item--left
                   .tt-ticket__name Ticket type 2
                   p.tt-ticket__descr Some information
@@ -178,7 +178,7 @@ block modals
                 a.sh-share__btn.sh-share__btn--vk(href='#') Share for 5% 
               form.pp-hidden-lg.fm-form.fm-form--grey(method='post', action='')
                 .fm-form__group.fm-form__group--left
-                  input.fm-form__control(type='text', placeholder='Discount code')
+                  input.fm-form__control(type='text', placeholder='Discount Code')
                 .fm-form__group.fm-form__group--right
                   input.fm-form__control.fm-form__control--grey(value='apply')
               .pp-hidden-lg.tt-cart
@@ -233,7 +233,7 @@ block modals
               .tt-cart__item
                 .ct-product
                   .ct-product__item
-                    .ct-product__qty 2x
+                    .ct-product__qty 2 x
                     .pp-hidden-xs.ct-product__name Ticket type 2
                     .pp-hidden-xs.ct-product__total $19.99
                 .ct-product
@@ -244,15 +244,15 @@ block modals
                 .tl-total__name Total
                 .tl-total__price $21.58
           .pp-modal__col.pp-modal__col--left
-            ul.pp-hidden-xs.tp-step
+            ul.pp-hidden-xs.tp-step.tp-step--inside2
               li.tp-step__item Customer information
               li.tp-step__item.tp-step__item--active Ticket information
               li.tp-step__item Payment
 
             .pp-hidden-lg.pp-heading Select tickets
-            form.fm-form(method='post', action='')
+            form.fm-form.fm-form--mail(method='post', action='')
               .fm-form__group
-                label.fm-form__label Buyer information
+                label.fm-form__label First Name
                 input.fm-form__control(type='text', placeholder='First Name')
               .fm-form__group
                 label.fm-form__label Last Name
@@ -282,14 +282,14 @@ block modals
                 | ‘Mishka Bar’, Nab. Reki Fontanki 40, Saint-Petersburg
               form.pp-hidden-xs.fm-form.fm-form--grey(method='post', action='')
                 .fm-form__group.fm-form__group--left
-                  input.fm-form__control(type='text', placeholder='Discount code')
+                  input.fm-form__control.fm-form__control--code(type='text', placeholder='Discount Code')
                 .fm-form__group.fm-form__group--right
                   input.fm-form__control.fm-form__control--grey(type='submit', value='apply')
             .pp-hidden-xs.tt-cart
               .tt-cart__item
                 .ct-product
                   .ct-product__item
-                    .ct-product__qty 2x
+                    .ct-product__qty 2 x
                     .pp-hidden-xs.ct-product__name Ticket type 2
                     .pp-hidden-xs.ct-product__total $19.99
                 .ct-product
@@ -300,19 +300,24 @@ block modals
                 .tl-total__name Total
                 .tl-total__price $21.58
           .pp-modal__col.pp-modal__col--left
-            ul.pp-hidden-xs.tp-step
+            ul.pp-hidden-xs.tp-step.tp-step--inside3
               li.tp-step__item Customer information
               li.tp-step__item Ticket information
               li.tp-step__item.tp-step__item--active Payment
             .pp-heading Checkout
             form.fm-form(method='post', action='')
-              .fm-form__group
-                input.fm-form__control.fm-form__control--card(type='text', placeholder='Card Number')
+              .fm-form__group.fm-form__group--checkout 
+                input.fm-form__control.fm-form__control--checkout.fm-form__control--card(type='text', placeholder='Card Number')
               .fm-form__group.fm-form__group--col
-                input.fm-form__control(type='text', placeholder='Expiry')
+                input.fm-form__control.fm-form__control--checkout(type='text', placeholder='Expiry')
               .fm-form__group.fm-form__group--col
-                input.fm-form__control(type='email', placeholder='CCV')
+                input.fm-form__control.fm-form__control--checkout(type='email', placeholder='CCV')
 
-            .hh-hint Already have a KickCity account? 
+            .hh-hint.hh-hint--checkout The order confirmation will be emailed to 
               span.hh-hint__text artem@kickcityapp.com
             button.st-tickets__btn(type='submit', href='#') Purchase
+            .py-payment
+              .py-payment__icon
+                img.py-payment__img(src='img/icons/py-visa.png' alt='visa' width='73' height='24')
+              .py-payment__icon
+                img.py-payment__img(src='img/icons/py-mastercard.png' alt='mastercard'  width='44' height='26')
