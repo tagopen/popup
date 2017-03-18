@@ -210,17 +210,17 @@
     display: table;
     clear: both; }
   .tp-step--inside {
-    margin: 14px 0 30px; }
+    margin: 14px 0 30px 10px; }
   .tp-step--inside2 {
-    margin: 14px 0 13px; }
+    margin: 14px 0 13px 10px; }
   .tp-step--inside3 {
-    margin: 14px 0 54px; }
+    margin: 14px 0 54px 10px; }
   .tp-step__item {
     position: relative;
     padding: 0 25px 0 11px;
     float: left;
     font: 400 13px/16px "San Francisco", sans-serif;
-    color: #808080;
+    color: #e6e6e6;
     text-transform: uppercase;
     text-align: center;
     letter-spacing: 0.6px;
@@ -236,9 +236,11 @@
       top: 1px;
       bottom: 0;
       left: -7px;
-      background: url(../img/icons/tp-arrow-right.png) no-repeat; }
-    .tp-step__item:first-of-type:after {
-      content: none; }
+      background: url(../img/icons/tp-arrow-right.svg) no-repeat; }
+    .tp-step__item:first-of-type {
+      padding-left: 0; }
+      .tp-step__item:first-of-type:after {
+        content: none; }
     .tp-step__item:last-of-type {
       padding-right: 0; }
     .tp-step__item--active {
@@ -399,7 +401,7 @@
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
-  background: url(../img/icons/sl-arrow-down.png) no-repeat;
+  background: url(../img/icons/sl-arrow-down.svg) no-repeat;
   background-position: right 15px top 50%;
   -webkit-box-sizing: border-box;
           box-sizing: border-box; }

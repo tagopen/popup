@@ -173,12 +173,11 @@
   +clr
   +box
   &--inside
-    margin: 14px 0 30px
+    margin: 14px 0 30px 10px
   &--inside2
-    margin: 14px 0 13px
+    margin: 14px 0 13px 10px
   &--inside3
-    margin: 14px 0 54px
-
+    margin: 14px 0 54px 10px
   &__item
     position: relative
     padding: 0 25px 0 11px
@@ -199,8 +198,9 @@
       top: 1px
       bottom: 0
       left: -7px
-      background: url(../img/icons/tp-arrow-right.png) no-repeat
+      background: url(../img/icons/tp-arrow-right.svg) no-repeat
     &:first-of-type
+      padding-left: 0
       &:after
         content: none
     &:last-of-type
@@ -338,7 +338,7 @@
   padding: 10px 35px 10px 10px
   border-radius: 6px
   appearance: none
-  background: url(../img/icons/sl-arrow-down.png) no-repeat
+  background: url(../img/icons/sl-arrow-down.svg) no-repeat
   background-position: right 15px top 50%
   +box
   &::-ms-expand
