@@ -35,7 +35,10 @@
   color: $tickets-heading-color
 +rx(999)
   .pp-heading
-    font: 300 15px/12px $main-font
+    margin: 57px 0 33px
+    font: 400 31px/33px $main-font
+    color: $tickets-heading-xs-color
+    +ls(-0.3)
   .pp-hidden-xs
     display: none !important
 +r(1000)
@@ -151,8 +154,19 @@
       padding: 43px 32px
       border-radius: 0
     &__close
-      top: -39px
-      right: 10px
+      top: -60px
+      right: 27px
+      width: 37px
+      height: 37px
+      &:before,
+      &:after
+        height: 4px
+        width: 131.4213%
+        top: 16px
+      &:before
+        left: -6px
+      &:after
+        right: -6px
     &__body
       &:before
         content: none
@@ -162,7 +176,8 @@
       width: 100%
       left: 0
       &--right
-        padding-bottom: 20px
+        margin: 0 -32px
+        padding: 0 32px 44px
         border-bottom: 1px solid $border-default-color
 
 +comment('step style')
@@ -335,11 +350,13 @@
       &:after
         transform: rotate(90deg)
 .sl-select
-  padding: 10px 35px 10px 10px
-  border-radius: 6px
+  margin-left: 47px
+  padding: 22px 58px 24px 24px
+  border-radius: 10px
   appearance: none
   background: url(../img/icons/sl-arrow-down.svg) no-repeat
-  background-position: right 15px top 50%
+  background-position: right 23px top 50%
+  font: 400 31px/23px $main-font
   +box
   &::-ms-expand
     display: none
@@ -399,7 +416,7 @@
     &--grey
       background: $form-control-submit-bg
       font: 400 13px/23px $main-font
-      color: #fff
+      color: #fefefe
       text-transform: uppercase
       outline: none
       text-align: center
@@ -416,16 +433,30 @@
   .st-tickets
     &__name
       margin: 0
-      padding: 30px 0
+      padding: 58px 0 35px
+      font: 400 31px/33px $main-font
       border-bottom: 1px solid $border-default-color
+      color: $tickets-heading-xs-color
+    &__btn
+      margin-top: 69px
+      padding: 33px
+      font: 400 30px/23px $main-font
   .tt-ticket
     margin: 0
-    padding: 20px 0
+    padding: 39px 0 30px
     border-radius: 0
     border:
       top: 0 none
       left: 0 none
       right: 0 none
+    &__name
+      font: 500 31px/36px $main-font
+      +ls(-0.3)
+    &__descr
+      font: 400 25px/36px $main-font
+      +ls(-0.3)
+    &__price
+      font: 400 31px/36px $main-font
 
 .fm-form
   &__group
@@ -557,12 +588,59 @@
       +ls(-0.9)
   .bd-board
     &__heading
-      font: 400 53px/25px $main-font
-      margin: -28px 0 0 59px
+      font: 400 53px/53px $main-font
+      margin: -43px 0 0 59px
       +ls(-0.9)
   .sh-share
-    padding: 20px 0
+    padding: 40px 0 36px
     text-align: center
+    &__btn
+      margin: 13px 9px 10px
+      padding: 23px 0 23px 96px
+      width: 334px
+      border-width: 2px
+      font: 400 27px/36px $main-font
+      text-align: left
+      &--fb
+        background: url(../img/icons/bd-fb-lg.png) no-repeat scroll 17px 50%
+      &--vk
+        background: url(../img/icons/bd-vk-lg.png) no-repeat scroll 19px 50%
+
+  .ct-product
+    &__item
+      font: 400 27px/23px $main-font
+  .fm-form
+    &--mail 
+      padding: 12px 0 0 10px
+    &--grey
+      margin: 5px 0
+    &__group
+      padding: 0
+      &--left
+        width: 74%
+        float: left
+      &--right
+        width: 23%
+        float: right
+    &__label
+      font: 400 27px/16px $main-font
+    &__control
+      padding: 40px 5px
+      border-width: 2px
+      font: 400 27px/41px $main-font
+      &--grey
+        padding: 37px 0 46px
+      &--checkout
+        margin-bottom: 12px
+        padding: 40px 22px
+  .in-info
+    font: 300 27px/27px $main-font
+    &--time
+    background: url(../img/icons/bd-time-lg.png) no-repeat scroll 0 50%
+
+
+    
+
 +comment('second modal style')
 .sh-share
   &--inside
@@ -666,7 +744,21 @@
     padding: 0 8px
     +box
   &__img
-
++rx(999)
+  .hh-hint
+    margin: 23px 0 45px
+    font: 400 27px/30px $main-font
+    &__text
+      font: 500 27px/30px $main-font
+  .py-payment
+    padding: 60px 0 0
+    &__img
+      &--visa
+        width: 86px
+        height: 28px
+      &--mastercard
+        width: 77px
+        height: 45px
 
 .oh-backdrop
   position: absolute

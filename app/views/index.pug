@@ -51,7 +51,8 @@ block modals
               li.tp-step__item Payment 
                 span.tp-step__text.tp-step__text--br information
             .st-tickets
-              .st-tickets__name.pp-heading Select tickets
+              .pp-hidden-xs.st-tickets__name.pp-heading Select tickets
+              .pp-hidden-lg.st-tickets__name.pp-heading Select Tickets
               .st-tickets__item.tt-ticket
                 .tt-ticket__item.tt-ticket__item--left
                   .tt-ticket__name Ticket type 1
@@ -83,7 +84,7 @@ block modals
                     option.sl-select__option(value='5') 5
               .pp-hidden-lg.sh-share
                 a.sh-share__btn.sh-share__btn--fb(href='#') Share for 5% off
-                a.sh-share__btn.sh-share__btn--vk(href='#') Share for 5% 
+                a.sh-share__btn.sh-share__btn--vk(href='#') Share for 5% off
               form.pp-hidden-lg.fm-form.fm-form--grey(method='post', action='')
                 .fm-form__group.fm-form__group--left
                   input.fm-form__control(type='text', placeholder='Discount Code')
@@ -175,7 +176,7 @@ block modals
                     option.sl-select__option(value='5') 5
               .pp-hidden-lg.sh-share
                 a.sh-share__btn.sh-share__btn--fb(href='#') Share for 5% off
-                a.sh-share__btn.sh-share__btn--vk(href='#') Share for 5% 
+                a.sh-share__btn.sh-share__btn--vk(href='#') Share for 5% off
               form.pp-hidden-lg.fm-form.fm-form--grey(method='post', action='')
                 .fm-form__group.fm-form__group--left
                   input.fm-form__control(type='text', placeholder='Discount Code')
@@ -249,7 +250,7 @@ block modals
               li.tp-step__item.tp-step__item--active Ticket information
               li.tp-step__item Payment
 
-            .pp-hidden-lg.pp-heading Select tickets
+            .pp-hidden-lg.pp-heading Ticket information
             form.fm-form.fm-form--mail(method='post', action='')
               .fm-form__group
                 label.fm-form__label First Name
@@ -304,7 +305,8 @@ block modals
               li.tp-step__item Customer information
               li.tp-step__item Ticket information
               li.tp-step__item.tp-step__item--active Payment
-            .pp-heading Checkout
+            .pp-hidden-xs.pp-heading Checkout
+            .pp-hidden-lg.pp-heading Payment information
             form.fm-form(method='post', action='')
               .fm-form__group.fm-form__group--checkout 
                 input.fm-form__control.fm-form__control--checkout.fm-form__control--card(type='text', placeholder='Card Number')
@@ -318,6 +320,6 @@ block modals
             button.st-tickets__btn(type='submit', href='#') Purchase
             .py-payment
               .py-payment__icon
-                img.py-payment__img(src='img/icons/py-visa.png' alt='visa' width='73' height='24')
+                img.py-payment__img.py-payment__img--visa(src='img/icons/py-visa.png' alt='visa' width='73' height='24')
               .py-payment__icon
-                img.py-payment__img(src='img/icons/py-mastercard.png' alt='mastercard'  width='44' height='26')
+                img.py-payment__img.py-payment__img--mastercard(src='img/icons/py-mastercard.png' alt='mastercard'  width='44' height='26')
