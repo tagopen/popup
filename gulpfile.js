@@ -77,13 +77,8 @@ gulp.task('svgSprite', function () {
       selector: "ic--%f",
       mode: {
         symbol: {
-          sprite: "../sprite.svg",
-          render: {
-            scss: {
-              dest:'../../../sass/_sprite.scss',
-              template: '../sass/base/_sprite_template.scss'
-            }
-          }
+          dest: '.',
+          sprite: 'sprite.svg'
         }
       }
     }))

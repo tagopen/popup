@@ -50,6 +50,7 @@
 .pp-modal
   position: fixed
   padding: 0
+  width: 750px
   margin: 0
   top: 0
   right: 0
@@ -456,7 +457,7 @@
       font: 400 25px/36px $main-font
       +ls(-0.3)
     &__price
-      font: 400 31px/36px $main-font
+      font: 400 27px/36px $main-font
 
 .fm-form
   &__group
@@ -577,7 +578,10 @@
     +box
 +rx(999)
   .tt-cart
-    margin-top: 20px
+    margin-top: 37px
+    padding: 0
+    &__item
+      padding: 37px 0
   .pr-profile
     &__photo
       width: 85px
@@ -608,14 +612,17 @@
 
   .ct-product
     &__item
-      font: 400 27px/23px $main-font
+      font: 400 27px/35px $main-font
   .fm-form
     &--mail 
       padding: 12px 0 0 10px
     &--grey
       margin: 5px 0
+    &--inside
+      margin: 0
+      padding: 120px 0 36px 5px
     &__group
-      padding: 0
+      padding: 0 7px 43px 0
       &--left
         width: 74%
         float: left
@@ -623,23 +630,24 @@
         width: 23%
         float: right
     &__label
+      display: block
+      padding-bottom: 22px
       font: 400 27px/16px $main-font
     &__control
-      padding: 40px 5px
+      padding: 0
       border-width: 2px
+      height: 83px
       font: 400 27px/41px $main-font
       &--grey
-        padding: 37px 0 46px
+        padding: 0
+        height: 83px
       &--checkout
         margin-bottom: 12px
-        padding: 40px 22px
+        padding: 0 22px
   .in-info
     font: 300 27px/27px $main-font
     &--time
     background: url(../img/icons/bd-time-lg.png) no-repeat scroll 0 50%
-
-
-    
 
 +comment('second modal style')
 .sh-share
@@ -751,7 +759,9 @@
     &__text
       font: 500 27px/30px $main-font
   .py-payment
-    padding: 60px 0 0
+    padding: 47px 0 0
+    &__icon
+      padding: 0 12px
     &__img
       &--visa
         width: 86px
@@ -759,6 +769,18 @@
       &--mastercard
         width: 77px
         height: 45px
+  .tt-ticket
+    &__quantity
+      font: 500 27px/23px $main-font
+      padding: 0
+  .tl-total
+    &__name
+      font: 500 32px/23px $main-font
+    &__price
+      font: 500 32px/23px $main-font
+
+  .in-info
+    padding-left: 58px
 
 .oh-backdrop
   position: absolute

@@ -58,6 +58,7 @@
 .pp-modal {
   position: fixed;
   padding: 0;
+  width: 750px;
   margin: 0;
   top: 0;
   right: 0;
@@ -567,7 +568,7 @@
       font: 400 25px/36px "San Francisco", sans-serif;
       letter-spacing: -0.3px; }
     .tt-ticket__price {
-      font: 400 31px/36px "San Francisco", sans-serif; } }
+      font: 400 27px/36px "San Francisco", sans-serif; } }
 
 .fm-form__group--left {
   padding: 9px 11px;
@@ -732,7 +733,10 @@
 
 @media only screen and (max-width: 999px) {
   .tt-cart {
-    margin-top: 20px; }
+    margin-top: 37px;
+    padding: 0; }
+    .tt-cart__item {
+      padding: 37px 0; }
   .pr-profile__photo {
     width: 85px;
     height: 85px; }
@@ -759,13 +763,16 @@
       .sh-share__btn--vk {
         background: url(../img/icons/bd-vk-lg.png) no-repeat scroll 19px 50%; }
   .ct-product__item {
-    font: 400 27px/23px "San Francisco", sans-serif; }
+    font: 400 27px/35px "San Francisco", sans-serif; }
   .fm-form--mail {
     padding: 12px 0 0 10px; }
   .fm-form--grey {
     margin: 5px 0; }
+  .fm-form--inside {
+    margin: 0;
+    padding: 120px 0 36px 5px; }
   .fm-form__group {
-    padding: 0; }
+    padding: 0 7px 43px 0; }
     .fm-form__group--left {
       width: 74%;
       float: left; }
@@ -773,16 +780,20 @@
       width: 23%;
       float: right; }
   .fm-form__label {
+    display: block;
+    padding-bottom: 22px;
     font: 400 27px/16px "San Francisco", sans-serif; }
   .fm-form__control {
-    padding: 40px 5px;
+    padding: 0;
     border-width: 2px;
+    height: 83px;
     font: 400 27px/41px "San Francisco", sans-serif; }
     .fm-form__control--grey {
-      padding: 37px 0 46px; }
+      padding: 0;
+      height: 83px; }
     .fm-form__control--checkout {
       margin-bottom: 12px;
-      padding: 40px 22px; }
+      padding: 0 22px; }
   .in-info {
     font: 300 27px/27px "San Francisco", sans-serif;
     background: url(../img/icons/bd-time-lg.png) no-repeat scroll 0 50%; } }
@@ -906,13 +917,24 @@
     .hh-hint__text {
       font: 500 27px/30px "San Francisco", sans-serif; }
   .py-payment {
-    padding: 60px 0 0; }
+    padding: 47px 0 0; }
+    .py-payment__icon {
+      padding: 0 12px; }
     .py-payment__img--visa {
       width: 86px;
       height: 28px; }
     .py-payment__img--mastercard {
       width: 77px;
-      height: 45px; } }
+      height: 45px; }
+  .tt-ticket__quantity {
+    font: 500 27px/23px "San Francisco", sans-serif;
+    padding: 0; }
+  .tl-total__name {
+    font: 500 32px/23px "San Francisco", sans-serif; }
+  .tl-total__price {
+    font: 500 32px/23px "San Francisco", sans-serif; }
+  .in-info {
+    padding-left: 58px; } }
 
 .oh-backdrop {
   position: absolute;
