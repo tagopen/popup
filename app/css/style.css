@@ -42,6 +42,10 @@
     text-align: center;
     letter-spacing: -0.3px; }
 
+@media only screen and (min-width: 1000px) {
+  .pp-hidden-lg {
+    display: none !important; } }
+
 @media only screen and (max-width: 999px) {
   .pp-heading {
     margin: 57px 0 33px;
@@ -54,9 +58,10 @@
   .pp-hidden-xs {
     display: none !important; } }
 
-@media only screen and (min-width: 1000px) {
-  .pp-hidden-lg {
-    display: none !important; } }
+@media only screen and (max-width: 599px) {
+  .pp-heading {
+    margin: 20px 0;
+    font: 400 30px/36px "San Francisco", sans-serif; } }
 
 /* ---------------------------------------- */
 /* M O D A L S    S T Y L E                 */
@@ -222,6 +227,10 @@
       margin: 0 -32px;
       padding: 0 32px 44px;
       border-bottom: 1px solid #e6e6e6; } }
+
+@media only screen and (max-width: 599px) {
+  .pp-modal__head {
+    padding: 15px; } }
 
 /* ---------------------------------------- */
 /* S T E P    S T Y L E                     */
@@ -557,6 +566,24 @@
       .fm-form__control:focus::placeholder {
         opacity: 0; }
 
+.gc-group-checkbox__input {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+
+.gc-group-checkbox__text {
+  font: 400 15px/23px "San Francisco", sans-serif;
+  color: #808080; }
+
+.gc-group-checkbox__link {
+  font: 500 15px/23px "San Francisco", sans-serif;
+  color: #3b99d3;
+  text-decoration: none;
+  -webkit-transition: color .3s ease-out;
+  transition: color .3s ease-out; }
+  .gc-group-checkbox__link:hover, .gc-group-checkbox__link:focus {
+    text-decoration: none;
+    color: #47b8fd; }
+
 @media only screen and (max-width: 999px) {
   .st-tickets__name {
     margin: 0;
@@ -584,6 +611,31 @@
       letter-spacing: -0.3px; }
     .tt-ticket__price {
       font: 400 27px/36px "San Francisco", sans-serif; } }
+
+@media only screen and (max-width: 599px) {
+  .sl-select {
+    padding: 10px 30px 10px 10px;
+    margin-left: 10px;
+    -webkit-border-radius: 5px;
+            border-radius: 5px;
+    background-position: right 10px top 50%;
+    background-size: 12px auto;
+    font: 400 20px/22px "San Francisco", sans-serif; }
+  .st-tickets {
+    padding: 0; }
+    .st-tickets__item {
+      padding: 20px 0; }
+    .st-tickets__name {
+      padding: 10px 0 25px; }
+    .st-tickets__btn {
+      margin: 20px 0;
+      width: 100%;
+      padding: 18px;
+      font: 400 22px/24px "San Francisco", sans-serif; }
+  .tt-ticket__name {
+    font: 500 22px/24px "San Francisco", sans-serif; }
+  .tt-ticket__descr {
+    font: 400 16px/18px "San Francisco", sans-serif; } }
 
 .fm-form__group--left {
   padding: 9px 11px;
@@ -821,6 +873,55 @@
     font: 300 27px/27px "San Francisco", sans-serif;
     background: url(../img/icons/bd-time-lg.png) no-repeat scroll 0 50%; } }
 
+@media only screen and (max-width: 599px) {
+  .pr-profile__photo {
+    width: 45px;
+    height: 45px; }
+  .pr-profile__name {
+    padding: 15px 15px 0;
+    font: 300 22px/25px "San Francisco", sans-serif; }
+  .bd-board {
+    padding: 0 0 0 58px; }
+    .bd-board__heading {
+      margin: 0;
+      font: 400 32px/36px "San Francisco", sans-serif; }
+  .fm-form {
+    padding: 10px; }
+    .fm-form--inside {
+      padding: 20px 0; }
+    .fm-form__group {
+      padding: 15px 0; }
+      .fm-form__group--left {
+        width: 65%; }
+      .fm-form__group--right {
+        width: 32%; }
+    .fm-form__control {
+      height: 59px;
+      padding: 0 15px; }
+    .fm-form__label {
+      font-size: 17px;
+      line-height: 21px;
+      padding: 0 0 3px;
+      font: 300 17px/21px "San Francisco", sans-serif; }
+  .ct-product__name {
+    font: 300 22px/24px "San Francisco", sans-serif; }
+  .tt-cart__item {
+    padding: 22px 0; }
+  .sh-share {
+    padding: 10px; }
+    .sh-share--purchase {
+      margin: 15px -10px; }
+    .sh-share__btn {
+      margin: 15px 10px;
+      padding: 10px 20px 10px 70px;
+      width: 100%;
+      max-width: 250px;
+      height: 59px;
+      background-size: 30px 30px;
+      font: 300 22px/35px "San Francisco", sans-serif; }
+  .fm-form__control {
+    font: 400 18px/20px "San Francisco", sans-serif; } }
+
 /* ---------------------------------------- */
 /* S E C O N D    M O D A L    S T Y L E    */
 /* ---------------------------------------- */
@@ -970,6 +1071,26 @@
   .in-info {
     padding-left: 58px; } }
 
+@media only screen and (max-width: 599px) {
+  .in-info {
+    font: 300 15px/24px "San Francisco", sans-serif;
+    padding-left: 40px; }
+  .tl-total__name {
+    font: 300 24px/27px "San Francisco", sans-serif; }
+  .tl-total__price {
+    font: 300 24px/27px "San Francisco", sans-serif; }
+  .hh-hint {
+    margin: 20px 0 30px;
+    font: 400 16px/18px "San Francisco", sans-serif; }
+    .hh-hint__text {
+      font: 400 20px/22px "San Francisco", sans-serif; }
+  .dl-delimiter {
+    margin: 15px auto;
+    font: 400 20px/22px "San Francisco", sans-serif; }
+  .py-payment__img {
+    width: 76px;
+    height: auto; } }
+
 /* ---------------------------------------- */
 /* F I F T H    M O D A L    S T Y L E      */
 /* ---------------------------------------- */
@@ -1001,6 +1122,10 @@
     background: url(../img/icons/sh-ticket2.png) no-repeat scroll 50% 8px;
     background-size: 26px 26px; }
 
+@media only screen and (max-width: 599px) {
+  .pp-modal__body {
+    padding: 15px; } }
+
 @media only screen and (max-width: 999px) {
   .rc-purchase__icon {
     width: 152px;
@@ -1017,6 +1142,17 @@
     .bt-btn-offer--ticket2 {
       background-position: 20px 50%;
       background-size: auto; } }
+
+@media only screen and (max-width: 599px) {
+  .rc-purchase {
+    padding: 0; }
+    .rc-purchase__icon {
+      width: 125px;
+      height: 125px; }
+  .bt-btn-offer {
+    margin: 10px 0;
+    width: 100%;
+    max-width: 280px; } }
 
 .oh-backdrop {
   position: absolute;

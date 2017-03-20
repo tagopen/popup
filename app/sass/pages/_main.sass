@@ -39,6 +39,9 @@
     margin: 12px 0
     text-align: center
     +ls(-0.3)
++r(1000)
+  .pp-hidden-lg
+    display: none !important
 +rx(999)
   .pp-heading
     margin: 57px 0 33px
@@ -50,9 +53,11 @@
       font: 400 52px/33px $main-font
   .pp-hidden-xs
     display: none !important
-+r(1000)
-  .pp-hidden-lg
-    display: none !important
+
++rx(599)
+  .pp-heading
+    margin: 20px 0
+    font: 400 30px/36px $main-font
 +comment("modals style")
 
 +comment('first modal style')
@@ -192,7 +197,10 @@
         margin: 0 -32px
         padding: 0 32px 44px
         border-bottom: 1px solid $border-default-color
-
++rx(599)
+  .pp-modal
+    &__head
+      padding: 15px
 +comment('step style')
 .tp-step
   padding: 0
@@ -444,6 +452,21 @@
       outline: none
       +placeholder
         opacity: 0
+.gc-group-checkbox
+  &__input
+    +box
+  &__text
+    font: 400 15px/23px $main-font
+    color: $checkbox-text-color
+  &__link
+    font: 500 15px/23px $main-font
+    color: $checkbox-link-color
+    text-decoration: none
+    transition: color .3s ease-out
+    &:hover,
+    &:focus
+      text-decoration: none
+      color: $checkbox-link-color-hover
 +rx(999)
   .st-tickets
     &__name
@@ -472,6 +495,31 @@
       +ls(-0.3)
     &__price
       font: 400 27px/36px $main-font
++rx(599)
+  .sl-select
+    padding: 10px 30px 10px 10px
+    margin-left: 10px
+    border-radius: 5px
+    background-position: right 10px top 50%
+    background-size: 12px auto
+    font: 400 20px/22px $main-font
+  .st-tickets
+    padding: 0
+    &__item
+      padding: 20px 0
+    &__name
+      padding: 10px 0 25px
+    &__btn
+      margin: 20px 0
+      width: 100%
+      padding: 18px
+      font: 400 22px/24px $main-font
+
+  .tt-ticket
+    &__name
+      font: 500 22px/24px $main-font
+    &__descr
+      font: 400 16px/18px $main-font
 
 .fm-form
   &__group
@@ -671,6 +719,60 @@
     &--time
     background: url(../img/icons/bd-time-lg.png) no-repeat scroll 0 50%
 
++rx(599)
+  .pr-profile
+    &__photo
+      width: 45px
+      height: 45px
+    &__name
+      padding: 15px 15px 0
+      font: 300 22px/25px $main-font
+  .bd-board
+    padding: 0 0 0 58px
+    &__heading
+      margin: 0
+      font: 400 32px/36px $main-font
+  .fm-form
+    padding: 10px
+    &--inside
+      padding: 20px 0
+    &__group
+      padding: 15px 0
+      &--left
+        width: 65%
+      &--right
+        width: 32%
+    &__control
+      height: 59px
+      padding: 0 15px
+    &__label
+      font-size: 17px
+      line-height: 21px
+      padding: 0 0 3px
+
+      font: 300 17px/21px $main-font
+  .ct-product
+    &__name
+      font: 300 22px/24px $main-font
+  .tt-cart
+    &__item
+      padding: 22px 0
+  .sh-share
+    padding: 10px
+    &--purchase
+      margin: 15px -10px
+    &__btn
+      margin: 15px 10px
+      padding: 10px 20px 10px 70px
+      width: 100%
+      max-width: 250px
+      height: 59px
+      background-size: 30px 30px
+      font: 300 22px/35px $main-font
+  .fm-form
+    &__control
+      font: 400 18px/20px $main-font
+
 +comment('second modal style')
 .sh-share
   &--inside
@@ -814,8 +916,29 @@
 
   .in-info
     padding-left: 58px
++rx(599)
+  .in-info
+    font: 300 15px/24px $main-font
+    padding-left: 40px
 
-
+  .tl-total
+    &__name
+      font: 300 24px/27px $main-font
+    &__price
+      font: 300 24px/27px $main-font
+  .hh-hint
+    margin: 20px 0 30px
+    font: 400 16px/18px $main-font
+    &__text
+      font: 400 20px/22px $main-font
+  
+  .dl-delimiter
+    margin: 15px auto
+    font: 400 20px/22px $main-font
+  .py-payment
+    &__img
+      width: 76px
+      height: auto
 +comment('fifth modal style')
 .rc-purchase 
   padding-top: 67px
@@ -841,6 +964,10 @@
   &--ticket2
     background: url(../img/icons/sh-ticket2.png) no-repeat scroll 50% 8px
     background-size: 26px 26px
++rx(599)
+  .pp-modal
+    &__body
+      padding: 15px
 +rx(999)
   .rc-purchase 
     &__icon
@@ -858,6 +985,16 @@
     &--ticket2
       background-position: 20px 50%
       background-size: auto
++rx(599)
+  .rc-purchase
+    padding: 0
+    &__icon
+      width: 125px
+      height: 125px
+  .bt-btn-offer
+    margin: 10px 0
+    width: 100%
+    max-width: 280px
 
 
 
