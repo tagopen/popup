@@ -196,8 +196,6 @@
             border-radius: 0; }
   .pp-modal__head {
     padding: 43px 32px; }
-  .pp-modal__body {
-    padding: 0 32px 43px; }
   .pp-modal__close {
     top: -60px;
     right: 27px;
@@ -211,8 +209,10 @@
       left: -6px; }
     .pp-modal__close:after {
       right: -6px; }
-  .pp-modal__body:before {
-    content: none; }
+  .pp-modal__body {
+    padding: 43px 32px; }
+    .pp-modal__body:before {
+      content: none; }
   .pp-modal__col {
     padding: 0;
     float: none;
@@ -825,7 +825,8 @@
 /* S E C O N D    M O D A L    S T Y L E    */
 /* ---------------------------------------- */
 .sh-share--inside {
-  padding: 41px 0 0; }
+  padding: 41px 0 0;
+  margin: 0 -11px; }
 
 .bt-btn-dark {
   margin: 0 8px;
@@ -1007,7 +1008,9 @@
     background: url(../img/icons/rc-decoder2.png) no-repeat;
     background-size: contain; }
   .bt-btn-offer {
-    margin: 14px 8px; }
+    margin: 14px 8px;
+    padding-top: 27px;
+    font: 400 23px/27px "San Francisco", sans-serif; }
     .bt-btn-offer--ticket1 {
       background-position: 20px 50%;
       background-size: auto; }
