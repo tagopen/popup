@@ -6,6 +6,7 @@ block content
   a.pp-modal-link(href='#pp-modal2').sh-share__btn Modal2
   a.pp-modal-link(href='#pp-modal3').sh-share__btn Modal3
   a.pp-modal-link(href='#pp-modal4').sh-share__btn Modal4
+  a.pp-modal-link(href='#pp-modal5').sh-share__btn Modal5
 block modals
   #pp-modal1.pp-modal(tabindex='-1', role='dialog', aria-hidden='true')
     .pp-modal__wrap
@@ -204,7 +205,7 @@ block modals
                       .ct-product__total $0.80
                 .tt-cart__item.tt-cart__item--bottom.tl-total
                   .tl-total__name Total
-                  .tl-total__price.tl-total__price--black $10.79
+                  .tl-total__price.tl-total__price--black $10.79  
             a.st-tickets__btn(href='#') Continue
             .pp-hidden-xs.hh-hint.hh-hint--center Already have a KickCity account? 
               a.hh-hint__link(href='#') Sign In to continue
@@ -320,3 +321,55 @@ block modals
                 img.py-payment__img.py-payment__img--visa(src='img/icons/py-visa.png' alt='visa' width='73' height='24')
               .py-payment__icon
                 img.py-payment__img.py-payment__img--mastercard(src='img/icons/py-mastercard.png' alt='mastercard'  width='44' height='26')
+
+  #pp-modal5.pp-modal(tabindex='-1', role='dialog', aria-hidden='true')
+    .pp-modal__wrap
+      .pp-modal__inner
+        button.pp-modal__close(type='button', aria-hidden='true') X
+        .pp-hidden-lg.pp-modal__head
+          .pr-profile
+            .pr-profile__photo
+              img.pr-profile__img(src='img/photo.jpg', alt='Artem Shatilov')
+            .pr-profile__name Artem Shatilov
+          .bd-board
+            .bd-board__heading Night Party in Local Bar
+        .pp-modal__body
+          .pp-hidden-xs.pp-modal__col.pp-modal__col--right
+            .pr-profile
+              .pr-profile__photo
+                img.pr-profile__img(src='img/photo.jpg', alt='Artem Shatilov')
+              .pr-profile__name Artem Shatilov
+            .bd-board
+              .bd-board__heading Night Party in Local Bar
+              .bd-board__text.in-info.in-info--time
+                | Saturday, 25 March, 23:00
+              .bd-board__text.in-info.in-info--place
+                | ‘Mishka Bar’, Nab. Reki Fontanki 40, Saint-Petersburg
+            .pp-hidden-xs.tt-cart
+              .od-order
+                | Your order ID: 5s2hgf8bs7ng46dfsa15j41e7s
+              .tt-cart__item
+                .ct-product
+                  .ct-product__item
+                    .ct-product__qty 2 x
+                    .pp-hidden-xs.ct-product__name Ticket type 2
+                    .pp-hidden-xs.ct-product__total $19.99
+                .ct-product
+                  .ct-product__item
+                    .ct-product__name Service charge
+                    .ct-product__total $1.59
+              .tt-cart__item.tl-total
+                .tl-total__name Total
+                .tl-total__price $21.58
+          .pp-modal__col.pp-modal__col--left
+            .rc-purchase
+              i.rc-purchase__icon.ic-purchase
+              .pp-heading.pp-heading--purchase You purchased one ticket
+              .hh-hint.hh-hint--purchase Your order will be emailed to 
+                span.hh-hint__text.hh-hint__text--br artem@kickcityapp.com
+            button.st-tickets__btn.st-tickets__btn--purchase(type='submit', href='#') Print it
+            .dl-delimiter Or
+            .sh-share.sh-share--purchase
+              a.sh-share__btn.bt-btn-offer.bt-btn-offer--ticket1(href='#') Check your ticket in the  
+                .bt-btn-ticket__text KickCity app
+              a.sh-share__btn.bt-btn-offer.bt-btn-offer--ticket2(href='#') View yout ticket here

@@ -35,6 +35,12 @@
   margin: 20px 0;
   font: 500 25px/25px "San Francisco", sans-serif;
   color: #333; }
+  .pp-heading--center {
+    text-align: center; }
+  .pp-heading--purchase {
+    margin: 12px 0;
+    text-align: center;
+    letter-spacing: -0.3px; }
 
 @media only screen and (max-width: 999px) {
   .pp-heading {
@@ -42,6 +48,9 @@
     font: 400 31px/33px "San Francisco", sans-serif;
     color: #808080;
     letter-spacing: -0.3px; }
+    .pp-heading--purchase {
+      margin: 37px 0 42px;
+      font: 400 52px/33px "San Francisco", sans-serif; }
   .pp-hidden-xs {
     display: none !important; } }
 
@@ -58,7 +67,6 @@
 .pp-modal {
   position: fixed;
   padding: 0;
-  width: 750px;
   margin: 0;
   top: 0;
   right: 0;
@@ -89,7 +97,6 @@
               transform: translate(0, 0); }
   .pp-modal__inner {
     position: relative;
-    padding: 15px;
     background-color: #fff;
     background-clip: padding-box;
     -webkit-border-radius: 5px;
@@ -104,6 +111,8 @@
       clear: both; }
   .pp-modal__body {
     position: relative;
+    padding: 15px;
+    border: 1px solid #f2f2f2;
     *zoom: 1;
     -webkit-box-sizing: border-box;
             box-sizing: border-box; }
@@ -115,10 +124,10 @@
       content: '';
       position: absolute;
       display: block;
-      top: 0;
-      left: 61.8%;
+      top: 15px;
+      bottom: 15px;
+      left: 61.4%;
       width: 1px;
-      height: 100%;
       background-color: #e6e6e6; }
   .pp-modal__close {
     position: absolute;
@@ -180,11 +189,15 @@
 
 @media only screen and (max-width: 999px) {
   .pp-modal__wrap {
+    max-width: 100%;
     margin: 84px 0; }
   .pp-modal__inner {
-    padding: 43px 32px;
     -webkit-border-radius: 0;
             border-radius: 0; }
+  .pp-modal__head {
+    padding: 43px 32px; }
+  .pp-modal__body {
+    padding: 0 32px 43px; }
   .pp-modal__close {
     top: -60px;
     right: 27px;
@@ -300,6 +313,8 @@
   letter-spacing: 0.5px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box; }
+  .st-tickets__btn--purchase {
+    margin-top: 17px; }
 
 .tt-ticket {
   display: table;
@@ -646,12 +661,13 @@
   margin: 0 -10px; }
   .sh-share__btn {
     display: inline-block;
+    vertical-align: top;
     margin: 8px 16px 5px;
     padding: 8px 0;
     width: 212px;
-    border: 1px solid #3d5a98;
+    border: 1px solid #e6e6e6;
     font: 600 13px/23px "San Francisco", sans-serif;
-    color: #3d5a98;
+    color: #808080;
     -webkit-border-radius: 7px;
             border-radius: 7px;
     text-decoration: none;
@@ -664,6 +680,11 @@
     .sh-share__btn--fb {
       border: 1px solid #3d5a98;
       background: url(../img/icons/bd-fb.png) no-repeat scroll 15px 50%; }
+  .sh-share--purchase {
+    margin: 0 -20px;
+    padding: 2px 0;
+    border-color: #e6e6e6;
+    color: #808080; }
 
 .tt-cart {
   padding: 17px 0 0 19px;
@@ -762,6 +783,8 @@
         background: url(../img/icons/bd-fb-lg.png) no-repeat scroll 17px 50%; }
       .sh-share__btn--vk {
         background: url(../img/icons/bd-vk-lg.png) no-repeat scroll 19px 50%; }
+    .sh-share--purchase {
+      padding: 0; }
   .ct-product__item {
     font: 400 27px/35px "San Francisco", sans-serif; }
   .fm-form--mail {
@@ -869,6 +892,8 @@
     letter-spacing: 0.2px; }
   .hh-hint--checkout {
     margin-top: 4px; }
+  .hh-hint--purchase {
+    text-align: center; }
   .hh-hint__link {
     font: 600 13px/23px "San Francisco", sans-serif;
     color: #3b99d3;
@@ -916,6 +941,14 @@
     font: 400 27px/30px "San Francisco", sans-serif; }
     .hh-hint__text {
       font: 500 27px/30px "San Francisco", sans-serif; }
+      .hh-hint__text--br {
+        display: block; }
+    .hh-hint--purchase {
+      margin: 12px 0 25px;
+      font: 400 27px/35px "San Francisco", sans-serif; }
+  .dl-delimiter {
+    margin-top: 30px;
+    font: 400 27px/34px "San Francisco", sans-serif; }
   .py-payment {
     padding: 47px 0 0; }
     .py-payment__icon {
@@ -935,6 +968,52 @@
     font: 500 32px/23px "San Francisco", sans-serif; }
   .in-info {
     padding-left: 58px; } }
+
+/* ---------------------------------------- */
+/* F I F T H    M O D A L    S T Y L E      */
+/* ---------------------------------------- */
+.rc-purchase {
+  padding-top: 67px;
+  text-align: center; }
+  .rc-purchase__icon {
+    display: inline-block;
+    width: 77px;
+    height: 77px;
+    background: url(../img/icons/rc-decoder.png) no-repeat; }
+
+.od-order {
+  padding: 98px 3px 27px;
+  font: 400 13px/13px "San Francisco", sans-serif;
+  color: #808080;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+
+.bt-btn-offer {
+  padding-top: 44px;
+  margin: 8px 2px 8px 18px;
+  height: 85px;
+  font: 400 13px/16px "San Francisco", sans-serif; }
+  .bt-btn-offer--ticket1 {
+    background: url(../img/icons/sh-ticket1.png) no-repeat scroll 50% 8px;
+    background-size: 30px 30px; }
+  .bt-btn-offer--ticket2 {
+    background: url(../img/icons/sh-ticket2.png) no-repeat scroll 50% 8px;
+    background-size: 26px 26px; }
+
+@media only screen and (max-width: 999px) {
+  .rc-purchase__icon {
+    width: 152px;
+    height: 152px;
+    background: url(../img/icons/rc-decoder2.png) no-repeat;
+    background-size: contain; }
+  .bt-btn-offer {
+    margin: 14px 8px; }
+    .bt-btn-offer--ticket1 {
+      background-position: 20px 50%;
+      background-size: auto; }
+    .bt-btn-offer--ticket2 {
+      background-position: 20px 50%;
+      background-size: auto; } }
 
 .oh-backdrop {
   position: absolute;

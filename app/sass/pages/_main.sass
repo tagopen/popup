@@ -33,12 +33,21 @@
   margin: 20px 0
   font: 500 25px/25px $main-font
   color: $tickets-heading-color
+  &--center
+    text-align: center
+  &--purchase
+    margin: 12px 0
+    text-align: center
+    +ls(-0.3)
 +rx(999)
   .pp-heading
     margin: 57px 0 33px
     font: 400 31px/33px $main-font
     color: $tickets-heading-xs-color
     +ls(-0.3)
+    &--purchase
+      margin: 37px 0 42px
+      font: 400 52px/33px $main-font
   .pp-hidden-xs
     display: none !important
 +r(1000)
@@ -50,7 +59,6 @@
 .pp-modal
   position: fixed
   padding: 0
-  width: 750px
   margin: 0
   top: 0
   right: 0
@@ -76,7 +84,6 @@
       transform: translate(0, 0)
   &__inner
     position: relative
-    padding: 15px
     background-color: $modal-body-bg
     background-clip: padding-box
     border-radius: 5px
@@ -85,16 +92,18 @@
     +clr
   &__body
     position: relative
+    padding: 15px
+    border: 1px solid $modal-head-border-color
     +clr
     +box
     &:before
       content: ''
       position: absolute
       display: block
-      top: 0
-      left: 61.8%
+      top: 15px
+      bottom: 15px
+      left: 61.4%
       width: 1px
-      height: 100%
       background-color: $border-default-color
   &__close
     position: absolute
@@ -150,10 +159,14 @@
 +rx(999)
   .pp-modal
     &__wrap
+      max-width: 100%
       margin: 84px 0
     &__inner
-      padding: 43px 32px
       border-radius: 0
+    &__head
+      padding: 43px 32px
+    &__body
+      padding: 0 32px 43px
     &__close
       top: -60px
       right: 27px
@@ -255,6 +268,8 @@
     +box
     &:focus
       outline none
+    &--purchase
+      margin-top: 17px
 
 .tt-ticket
   display: table
@@ -515,6 +530,7 @@
   margin: 0 -10px
   &__btn
     display: inline-block
+    vertical-align: top
     margin: 8px 16px 5px
     padding: 8px 0
     width: 212px
@@ -531,6 +547,11 @@
     &--fb
       border: 1px solid $share-btn-fb
       background: url(../img/icons/bd-fb.png) no-repeat scroll 15px 50%
+  &--purchase
+    margin: 0 -20px
+    padding: 2px 0
+    border-color: $share-btn-border
+    color: $share-btn-color
 .tt-cart
   padding: 17px 0 0 19px
   +box
@@ -609,6 +630,8 @@
         background: url(../img/icons/bd-fb-lg.png) no-repeat scroll 17px 50%
       &--vk
         background: url(../img/icons/bd-vk-lg.png) no-repeat scroll 19px 50%
+    &--purchase
+      padding: 0
 
   .ct-product
     &__item
@@ -712,6 +735,8 @@
     +ls(0.2)
   &--checkout
     margin-top: 4px
+  &--purchase
+    text-align: center
   +box
   &__link
     font: 600 13px/23px $main-font
@@ -758,6 +783,14 @@
     font: 400 27px/30px $main-font
     &__text
       font: 500 27px/30px $main-font
+      &--br
+        display: block
+    &--purchase
+      margin: 12px 0 25px
+      font: 400 27px/35px $main-font
+  .dl-delimiter
+    margin-top: 30px
+    font: 400 27px/34px $main-font
   .py-payment
     padding: 47px 0 0
     &__icon
@@ -781,6 +814,50 @@
 
   .in-info
     padding-left: 58px
+
+
++comment('fifth modal style')
+.rc-purchase 
+  padding-top: 67px
+  text-align: center
+  &__icon
+    display: inline-block
+    width: 77px
+    height: 77px
+    background: url(../img/icons/rc-decoder.png) no-repeat
+.od-order  
+  padding: 98px 3px 27px
+  font: 400 13px/13px $main-font
+  color: $order-color
+  +box
+.bt-btn-offer
+  padding-top: 44px
+  margin: 8px 2px 8px 18px
+  height: 85px
+  font: 400 13px/16px $main-font
+  &--ticket1
+    background: url(../img/icons/sh-ticket1.png) no-repeat scroll 50% 8px
+    background-size: 30px 30px
+  &--ticket2
+    background: url(../img/icons/sh-ticket2.png) no-repeat scroll 50% 8px
+    background-size: 26px 26px
++rx(999)
+  .rc-purchase 
+    &__icon
+      width: 152px
+      height: 152px
+      background: url(../img/icons/rc-decoder2.png) no-repeat
+      background-size: contain
+  .bt-btn-offer
+    margin: 14px 8px
+    &--ticket1
+      background-position: 20px 50%
+      background-size: auto
+    &--ticket2
+      background-position: 20px 50%
+      background-size: auto
+
+
 
 .oh-backdrop
   position: absolute
