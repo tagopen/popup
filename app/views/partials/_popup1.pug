@@ -1,0 +1,91 @@
+#pp-modal1.pp-modal(tabindex='-1', role='dialog', aria-hidden='true')
+  .pp-modal__wrap
+    .pp-modal__inner
+      button.pp-modal__close(type='button', aria-hidden='true') X
+      .pp-hidden-lg.pp-modal__head
+        .pr-profile
+          .pr-profile__photo
+            img.pr-profile__img(src='img/photo.jpg', alt='Artem Shatilov')
+          .pr-profile__name Artem Shatilov
+        .bd-board
+          .bd-board__heading Night Party in Local Bar
+      .pp-modal__body
+        .pp-hidden-xs.pp-modal__col.pp-modal__col--right
+          .pr-profile
+            .pr-profile__photo
+              img.pr-profile__img(src='img/photo.jpg', alt='Artem Shatilov')
+            .pr-profile__name Artem Shatilov
+          .bd-board
+            .bd-board__heading Night Party in Local Bar
+            .bd-board__text.in-info.in-info--time
+              | Saturday, 25 March, 23:00
+            .bd-board__text.in-info.in-info--place
+              | ‘Mishka Bar’, Nab. Reki Fontanki 40, Saint-Petersburg
+            .sh-share
+              a.sh-share__btn.sh-share__btn--fb(href='#') Share for 5% off
+              a.sh-share__btn.sh-share__btn--vk(href='#') Share for 5% off
+          .tt-cart
+            .tt-cart__item
+              .ct-product
+                .ct-product__item
+                  .ct-product__qty 2 x
+                  .pp-hidden-xs.ct-product__name Ticket type 2
+                  .pp-hidden-xs.ct-product__total $19.99
+              .ct-product
+                .ct-product__item
+                  .ct-product__name Service charge
+                  .ct-product__total $1.59
+            .tt-cart__item.tl-total
+              .tl-total__name Total
+              .tl-total__price $21.58
+        .pp-modal__col.pp-modal__col--left
+          ul.pp-hidden-xs.tp-step
+            li.tp-step__item.tp-step__item--active Select 
+              span.tp-step__text.tp-step__text--br tickets
+            li.tp-step__item Customer 
+              span.tp-step__text.tp-step__text--br information
+            li.tp-step__item Ticket 
+              span.tp-step__text.tp-step__text--br information
+            li.tp-step__item Payment 
+              span.tp-step__text.tp-step__text--br information
+          .st-tickets
+            .pp-hidden-xs.st-tickets__name.pp-heading Select tickets
+            .pp-hidden-lg.st-tickets__name.pp-heading Select Tickets
+            .st-tickets__item.tt-ticket
+              .tt-ticket__item.tt-ticket__item--left
+                .tt-ticket__name Ticket type 1
+                p.tt-ticket__descr Some information
+              .tt-ticket__item.tt-ticket__item--right
+                span.tt-ticket__price $9.99
+                button.pp-hidden-xs.tt-ticket__btn
+                select.pp-hidden-lg.tt-ticket__select.sl-select
+                  option.sl-select__option(value='1') 1
+                  option.sl-select__option(value='2') 2
+                  option.sl-select__option(value='3') 3
+                  option.sl-select__option(value='4') 4
+                  option.sl-select__option(value='5') 5
+            .st-tickets__item.tt-ticket
+              .pp-hidden-xs.tt-ticket__item.tt-ticket__item--left
+                .tt-ticket__quantity 2x
+              .tt-ticket__item.tt-ticket__item--left
+                .tt-ticket__name Ticket type 2
+                p.tt-ticket__descr Some information
+              .tt-ticket__item.tt-ticket__item--right
+                span.tt-ticket__price $19.99
+                button.pp-hidden-xs.tt-ticket__btn.tt-ticket__btn--inc -
+                button.pp-hidden-xs.tt-ticket__btn.tt-ticket__btn--dec +
+                select.pp-hidden-lg.tt-ticket__select.sl-select
+                  option.sl-select__option(value='1') 1
+                  option.sl-select__option(value='2') 2
+                  option.sl-select__option(value='3') 3
+                  option.sl-select__option(value='4') 4
+                  option.sl-select__option(value='5') 5
+            .pp-hidden-lg.sh-share
+              a.sh-share__btn.sh-share__btn--fb(href='#') Share for 5% off
+              a.sh-share__btn.sh-share__btn--vk(href='#') Share for 5% off
+            form.pp-hidden-lg.fm-form.fm-form--grey(method='post', action='')
+              .fm-form__group.fm-form__group--left
+                input.fm-form__control(type='text', placeholder='Discount Code')
+              .fm-form__group.fm-form__group--right
+                input.fm-form__control.fm-form__control--grey(type='submit', value='apply')
+          a.st-tickets__btn(href='#') Continue

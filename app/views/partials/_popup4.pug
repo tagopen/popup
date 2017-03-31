@@ -1,0 +1,65 @@
+#pp-modal4.pp-modal(tabindex='-1', role='dialog', aria-hidden='true')
+  .pp-modal__wrap
+    .pp-modal__inner
+      button.pp-modal__close(type='button', aria-hidden='true') X
+      .pp-modal__head
+        .pr-profile
+          .pr-profile__photo
+            img.pr-profile__img(src='img/photo.jpg', alt='Artem Shatilov')
+          .pr-profile__name Artem Shatilov
+        .bd-board
+          .bd-board__heading Night Party in Local Bar
+      .pp-modal__body
+        .pp-hidden-xs.pp-modal__col.pp-modal__col--right
+          .pr-profile
+            .pr-profile__photo
+              img.pr-profile__img(src='img/photo.jpg', alt='Artem Shatilov')
+            .pr-profile__name Artem Shatilov
+          .bd-board
+            .bd-board__heading Night Party in Local Bar
+            .bd-board__text.in-info.in-info--time
+              | Saturday, 25 March, 23:00
+            .bd-board__text.in-info.in-info--place
+              | ‘Mishka Bar’, Nab. Reki Fontanki 40, Saint-Petersburg
+            form.pp-hidden-xs.fm-form.fm-form--grey(method='post', action='')
+              .fm-form__group.fm-form__group--left
+                input.fm-form__control.fm-form__control--code(type='text', placeholder='Discount Code')
+              .fm-form__group.fm-form__group--right
+                input.fm-form__control.fm-form__control--grey(type='submit', value='apply')
+          .tt-cart
+            .tt-cart__item
+              .ct-product
+                .ct-product__item
+                  .ct-product__qty 2 x
+                  .pp-hidden-xs.ct-product__name Ticket type 2
+                  .pp-hidden-xs.ct-product__total $19.99
+              .ct-product
+                .ct-product__item
+                  .ct-product__name Service charge
+                  .ct-product__total $1.59
+            .tt-cart__item.tl-total
+              .tl-total__name Total
+              .tl-total__price $21.58
+        .pp-modal__col.pp-modal__col--left
+          ul.pp-hidden-xs.tp-step.tp-step--inside3
+            li.tp-step__item Customer information
+            li.tp-step__item Ticket information
+            li.tp-step__item.tp-step__item--active Payment
+          .pp-hidden-xs.pp-heading Checkout
+          .pp-hidden-lg.pp-heading Payment information
+          form.fm-form(method='post', action='')
+            .fm-form__group.fm-form__group--checkout 
+              input.fm-form__control.fm-form__control--checkout.fm-form__control--card(type='text', placeholder='Card Number')
+            .fm-form__group.fm-form__group--col
+              input.fm-form__control.fm-form__control--checkout(type='text', placeholder='Expiry')
+            .fm-form__group.fm-form__group--col
+              input.fm-form__control.fm-form__control--checkout(type='email', placeholder='CCV')
+
+          .hh-hint.hh-hint--checkout The order confirmation will be emailed to 
+            span.hh-hint__text artem@kickcityapp.com
+          button.st-tickets__btn(type='submit', href='#') Purchase
+          .py-payment
+            .py-payment__icon
+              img.py-payment__img.py-payment__img--visa(src='img/icons/py-visa.png' alt='visa' width='73' height='24')
+            .py-payment__icon
+              img.py-payment__img.py-payment__img--mastercard(src='img/icons/py-mastercard.png' alt='mastercard'  width='44' height='26')
