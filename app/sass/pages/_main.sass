@@ -201,6 +201,22 @@
   .pp-modal
     &__head
       padding: 15px
+    &__wrap
+      margin: 42px 0
+    &__close
+      top: -30px
+      right: 13px
+      width: 18px
+      height: 18px
+      &:before,
+      &:after
+        height: 2px
+        width: (131.4213 / 2)#{'%'}
+        top: 8px
+      &:before
+        left: 3px
+      &:after
+        right: 3px
 +comment('step style')
 .tp-step
   padding: 0
@@ -500,30 +516,32 @@
       font: 400 27px/36px $main-font
 +rx(599)
   .sl-select
-    padding: 10px 30px 10px 10px
-    margin-left: 10px
+    margin-left: 23px
+    padding: 11px 29px 12px 12px
     border-radius: 5px
-    background-position: right 10px top 50%
-    background-size: 12px auto
-    font: 400 20px/22px $main-font
+    background-position: right 12px top 50%
+    font: 400 15px/12px $main-font
+    background-size: 8px 5px
   .st-tickets
     padding: 0
     &__item
       padding: 20px 0
     &__name
-      padding: 10px 0 25px
+      padding: 17px 0
+      font: 400 15px/17px $main-font
     &__btn
-      margin: 20px 0
+      margin-top: 34px 
+      padding: 16px
       width: 100%
-      padding: 18px
-      font: 400 22px/24px $main-font
-
+      font: 400 15px/16px $main-font
   .tt-ticket
+    padding: 19px 0 15px
     &__name
-      font: 500 22px/24px $main-font
+      font: 500 15px/18px $main-font
     &__descr
-      font: 400 16px/18px $main-font
-
+      font: 400 12px/18px $main-font
+    &__price
+      font: 400 13px/18px $main-font
 .fm-form
   &__group
     &--left
@@ -709,7 +727,6 @@
       padding-bottom: 22px
       font: 400 27px/16px $main-font
     &__control
-      padding: 0
       border-width: 2px
       height: 83px
       font: 400 27px/41px $main-font
@@ -722,22 +739,23 @@
       &--popup2
         padding-left: 13px
   .in-info
+    padding-left: 58px
     font: 300 27px/27px $main-font
     &--time
     background: url(../img/icons/bd-time-lg.png) no-repeat scroll 0 50%
 +rx(599)
   .pr-profile
     &__photo
-      width: 45px
-      height: 45px
+      width: 42px
+      height: 42px
     &__name
-      padding: 15px 15px 0
-      font: 300 22px/25px $main-font
+      padding: 0 12px
+      font: 300 16px/13px $main-font
   .bd-board
-    padding: 0 0 0 58px
+    padding: 0 0 0 24px
     &__heading
-      margin: 0
-      font: 400 32px/36px $main-font
+      margin: -22px 0 0 29px
+      font: 400 26px/27px $main-font
   .fm-form
     padding: 10px
     &--inside
@@ -749,8 +767,9 @@
       &--right
         width: 32%
     &__control
-      height: 59px
-      padding: 0 15px
+      border-width: 1px
+      height: 41px
+      font: 400 13px/20px $main-font
     &__label
       font-size: 17px
       line-height: 21px
@@ -758,11 +777,12 @@
 
       font: 300 17px/21px $main-font
   .ct-product
-    &__name
-      font: 300 22px/24px $main-font
-  .tt-cart
     &__item
-      padding: 22px 0
+      font: 400 13px/17px $main-font
+  .tt-cart
+    margin-top: 18px
+    &__item
+      padding: 18px 0
   .sh-share
     padding: 10px
     &--purchase
@@ -775,9 +795,6 @@
       height: 59px
       background-size: 30px 30px
       font: 300 22px/35px $main-font
-  .fm-form
-    &__control
-      font: 400 18px/20px $main-font
 
 +comment('second modal style')
 .sh-share
@@ -949,18 +966,20 @@
         padding: 0 10px 29px 8px
       &--fullwidth
         width: 100%
-  .in-info
-    padding-left: 58px
 +rx(599)
   .in-info
-    font: 300 15px/24px $main-font
-    padding-left: 40px
+    font: 300 13px/13px $main-font
+    padding-left: 29px
+    background-size: 11px 11px
 
   .tl-total
     &__name
-      font: 300 24px/27px $main-font
+      font: 500 16px/11px $main-font
     &__price
-      font: 300 24px/27px $main-font
+      font: 500 16px/11px $main-font
+  .tt-ticket
+    &__quantity
+      font: 500 13px/11px $main-font
   .hh-hint
     margin: 20px 0 30px
     font: 400 16px/18px $main-font
