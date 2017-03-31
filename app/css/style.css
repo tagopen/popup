@@ -230,7 +230,9 @@
 
 @media only screen and (max-width: 599px) {
   .pp-modal__head {
-    padding: 15px; }
+    padding: 21px 16px; }
+  .pp-modal__body {
+    padding: 21px 16px; }
   .pp-modal__wrap {
     margin: 42px 0; }
   .pp-modal__close {
@@ -958,7 +960,7 @@
   margin: 0 -11px; }
 
 .bt-btn-dark {
-  margin: 0 8px;
+  margin: 8px;
   -webkit-border-radius: 4px;
           border-radius: 4px;
   color: #fff;
@@ -969,7 +971,6 @@
     background: #3d5a98 url(../img/icons/bd-fb-lg.png) no-repeat scroll 0 50%;
     letter-spacing: -0.2px; }
   .bt-btn-dark--vk {
-    margin: 0 11px;
     border: 1px solid #4d75a3;
     background: #4d75a3 url(../img/icons/bd-vk-lg.png) no-repeat scroll 0 50%; }
 
@@ -1125,6 +1126,17 @@
     width: 100%; } }
 
 @media only screen and (max-width: 599px) {
+  .bt-btn-dark {
+    padding-left: 25px;
+    line-height: 20px;
+    height: 44px;
+    -webkit-border-radius: 5px;
+            border-radius: 5px; }
+    .bt-btn-dark--fb {
+      background-size: 30px 30px; }
+    .bt-btn-dark--vk {
+      background-size: 30px 30px;
+      background-position: 6px 50%; }
   .in-info {
     font: 300 13px/13px "San Francisco", sans-serif;
     padding-left: 29px;
@@ -1136,16 +1148,22 @@
   .tt-ticket__quantity {
     font: 500 13px/11px "San Francisco", sans-serif; }
   .hh-hint {
-    margin: 20px 0 30px;
-    font: 400 16px/18px "San Francisco", sans-serif; }
+    margin: 11px 0 22px;
+    font: 400 13px/15px "San Francisco", sans-serif; }
     .hh-hint__text {
-      font: 400 20px/22px "San Francisco", sans-serif; }
+      font: 500 13px/15px "San Francisco", sans-serif; }
+    .hh-hint__link--popup2 {
+      font: 500 13px/13px "San Francisco", sans-serif; }
+  .sh-share__btn {
+    font: 300 15px/21px "San Francisco", sans-serif; }
   .dl-delimiter {
-    margin: 15px auto;
-    font: 400 20px/22px "San Francisco", sans-serif; }
+    margin-top: 30px auto;
+    font: 400 13px/17px "San Francisco", sans-serif; }
   .py-payment__img {
     width: 76px;
-    height: auto; } }
+    height: auto; }
+  .fm-form__group--popup2 {
+    padding: 0 5px 14px 4px; } }
 
 /* ---------------------------------------- */
 /* F I F T H    M O D A L    S T Y L E      */
@@ -1211,7 +1229,7 @@
     max-width: 280px; } }
 
 .oh-backdrop {
-  position: absolute;
+  position: fixed;
   display: none;
   margin: 0;
   padding: 0;

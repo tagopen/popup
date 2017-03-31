@@ -200,7 +200,9 @@
 +rx(599)
   .pp-modal
     &__head
-      padding: 15px
+      padding: 21px 16px
+    &__body
+      padding: 21px 16px
     &__wrap
       margin: 42px 0
     &__close
@@ -802,7 +804,7 @@
     padding: 41px 0 0
     margin: 0 -11px
 .bt-btn-dark
-  margin: 0 8px
+  margin: 8px
   border-radius: 4px    
   color: $share-btn-dark-color
   padding-left: 24px
@@ -812,7 +814,6 @@
     background: $share-btn-fb url(../img/icons/bd-fb-lg.png) no-repeat scroll 0 50%
     +ls(-0.2)
   &--vk
-    margin: 0 11px
     border: 1px solid $share-btn-vk
     background: $share-btn-vk url(../img/icons/bd-vk-lg.png) no-repeat scroll 0 50%
 .dl-delimiter
@@ -967,6 +968,16 @@
       &--fullwidth
         width: 100%
 +rx(599)
+  .bt-btn-dark
+    padding-left: 25px
+    line-height: 20px
+    height: 44px  
+    border-radius: 5px  
+    &--fb
+      background-size: 30px 30px
+    &--vk
+      background-size: 30px 30px
+      background-position: 6px 50%
   .in-info
     font: 300 13px/13px $main-font
     padding-left: 29px
@@ -981,18 +992,27 @@
     &__quantity
       font: 500 13px/11px $main-font
   .hh-hint
-    margin: 20px 0 30px
-    font: 400 16px/18px $main-font
+    margin: 11px 0 22px
+    font: 400 13px/15px $main-font
     &__text
-      font: 400 20px/22px $main-font
-  
+      font: 500 13px/15px $main-font
+    &__link
+      &--popup2
+        font: 500 13px/13px $main-font
+  .sh-share
+    &__btn
+      font: 300 15px/21px $main-font
   .dl-delimiter
-    margin: 15px auto
-    font: 400 20px/22px $main-font
+    margin-top: 30px auto
+    font: 400 13px/17px $main-font
   .py-payment
     &__img
       width: 76px
       height: auto
+  .fm-form
+    &__group
+      &--popup2
+        padding: 0 5px 14px 4px
 +comment('fifth modal style')
 .rc-purchase 
   padding-top: 67px
@@ -1051,7 +1071,7 @@
     max-width: 280px
 
 .oh-backdrop
-  position: absolute
+  position: fixed
   display: none
   margin: 0
   padding: 0
