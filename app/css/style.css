@@ -591,6 +591,8 @@
     font: 400 31px/33px "San Francisco", sans-serif;
     border-bottom: 1px solid #e6e6e6;
     color: #808080; }
+    .st-tickets__name--popup2 {
+      padding: 14px 0 31px; }
   .st-tickets__btn {
     margin-top: 69px;
     padding: 33px;
@@ -1038,6 +1040,20 @@
             box-sizing: border-box; }
 
 @media only screen and (max-width: 999px) {
+  .sh-share--inside {
+    padding: 0; }
+  .bt-btn-dark {
+    padding-left: 51px;
+    line-height: 41px;
+    height: 88px;
+    -webkit-border-radius: 10px;
+            border-radius: 10px;
+    text-align: center; }
+    .bt-btn-dark--fb {
+      background-size: 60px 60px; }
+    .bt-btn-dark--vk {
+      background-size: 60px 60px;
+      background-position: 12px 50%; }
   .hh-hint {
     margin: 23px 0 45px;
     font: 400 27px/30px "San Francisco", sans-serif; }
@@ -1051,6 +1067,9 @@
   .dl-delimiter {
     margin-top: 30px;
     font: 400 27px/34px "San Francisco", sans-serif; }
+    .dl-delimiter--popup2 {
+      margin-top: 22px;
+      margin-bottom: 14px; }
   .py-payment {
     padding: 47px 0 0; }
     .py-payment__icon {
@@ -1068,6 +1087,10 @@
     font: 500 32px/23px "San Francisco", sans-serif; }
   .tl-total__price {
     font: 500 32px/23px "San Francisco", sans-serif; }
+  .fm-form__group--popup2 {
+    padding: 0 10px 31px 8px; }
+  .fm-form__group--fullwidth {
+    width: 100%; }
   .in-info {
     padding-left: 58px; } }
 
