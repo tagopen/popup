@@ -848,6 +848,8 @@
   .fm-form--inside {
     margin: 0;
     padding: 120px 0 36px 5px; }
+  .fm-form--popup2 {
+    padding-bottom: 18px; }
   .fm-form__group {
     padding: 0 7px 43px 0; }
     .fm-form__group--left {
@@ -871,6 +873,8 @@
     .fm-form__control--checkout {
       margin-bottom: 12px;
       padding: 0 22px; }
+    .fm-form__control--popup2 {
+      padding-left: 13px; }
   .in-info {
     font: 300 27px/27px "San Francisco", sans-serif;
     background: url(../img/icons/bd-time-lg.png) no-repeat scroll 0 50%; } }
@@ -1057,10 +1061,16 @@
   .hh-hint {
     margin: 23px 0 45px;
     font: 400 27px/30px "San Francisco", sans-serif; }
+    .hh-hint--popup2 {
+      margin: 45px 0 0;
+      font: 500 25px/30px "San Francisco", sans-serif;
+      letter-spacing: 0.8px; }
     .hh-hint__text {
       font: 500 27px/30px "San Francisco", sans-serif; }
       .hh-hint__text--br {
         display: block; }
+    .hh-hint__link--popup2 {
+      font: 500 25px/27px "San Francisco", sans-serif; }
     .hh-hint--purchase {
       margin: 12px 0 25px;
       font: 400 27px/35px "San Francisco", sans-serif; }
@@ -1069,7 +1079,7 @@
     font: 400 27px/34px "San Francisco", sans-serif; }
     .dl-delimiter--popup2 {
       margin-top: 22px;
-      margin-bottom: 14px; }
+      margin-bottom: 18px; }
   .py-payment {
     padding: 47px 0 0; }
     .py-payment__icon {
@@ -1088,7 +1098,7 @@
   .tl-total__price {
     font: 500 32px/23px "San Francisco", sans-serif; }
   .fm-form__group--popup2 {
-    padding: 0 10px 31px 8px; }
+    padding: 0 10px 29px 8px; }
   .fm-form__group--fullwidth {
     width: 100%; }
   .in-info {
