@@ -139,7 +139,7 @@
       width: 1px;
       background-color: rgba(230, 230, 230, 0.5); }
   .pp-modal__footer {
-    padding: 38px 0 19px;
+    padding: 38px 0 0;
     background-color: transparent; }
   .pp-modal__close {
     position: absolute;
@@ -1240,14 +1240,12 @@
 /* ---------------------------------------- */
 /* C O P Y R I G H T                        */
 /* ---------------------------------------- */
-.copyright {
-  font: 400 13.4px/0.8px "San Francisco", sans-serif;
-  color: #fefefe;
-  text-align: center; }
-  .copyright__name {
-    position: relative;
-    top: 10px;
-    font: 500 41px/31px "San Francisco", sans-serif; }
+.cp-copyright__img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  width: 161.5px;
+  height: auto; }
 
 .oh-backdrop {
   position: fixed;
