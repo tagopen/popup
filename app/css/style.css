@@ -120,6 +120,8 @@
   .pp-modal__body {
     position: relative;
     padding: 15px;
+    -webkit-border-radius: 5px;
+            border-radius: 5px;
     background-color: #fff;
     border: 1px solid #f2f2f2;
     *zoom: 1;
@@ -222,7 +224,9 @@
     .pp-modal__close:after {
       right: -6px; }
   .pp-modal__body {
-    padding: 43px 32px; }
+    padding: 43px 32px;
+    -webkit-border-radius: 0;
+            border-radius: 0; }
     .pp-modal__body:before {
       content: none; }
   .pp-modal__col {
@@ -490,7 +494,7 @@
   .fm-form__group {
     width: 100%;
     float: left;
-    padding: 10px 10px 6px 8px;
+    padding: 2px 10px 6px 8px;
     -webkit-box-sizing: border-box;
             box-sizing: border-box; }
     .fm-form__group--left {
@@ -500,7 +504,7 @@
       padding: 5px;
       width: 215px; }
   .fm-form__label {
-    font: 400 13px/15px "San Francisco", sans-serif;
+    font: 400 13px/26px "San Francisco", sans-serif;
     color: #808080; }
   .fm-form__control {
     padding: 0 14px;
