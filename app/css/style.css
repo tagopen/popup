@@ -592,7 +592,8 @@
     border-bottom: 1px solid #e6e6e6;
     color: #808080; }
     .st-tickets__name--popup2 {
-      padding: 14px 0 31px; }
+      padding: 14px 0 31px;
+      border: 0 none; }
   .st-tickets__btn {
     margin-top: 69px;
     padding: 33px;
