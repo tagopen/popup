@@ -63,7 +63,8 @@
     margin: 20px 0;
     font: 400 30px/36px "San Francisco", sans-serif; }
     .pp-heading--purchase {
-      font: 400 25.5px/1 "San Francisco", sans-serif; } }
+      font: 400 25.5px/1 "San Francisco", sans-serif;
+      color: #333333; } }
 
 /* ---------------------------------------- */
 /* M O D A L S    S T Y L E                 */
