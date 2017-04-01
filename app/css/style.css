@@ -937,10 +937,14 @@
         width: 74.41860%; }
       .fm-form__group--right {
         width: 23.54651%; }
+      .fm-form__group--checkout {
+        padding: 0 10px 12px 8px; }
     .fm-form__control {
       border-width: 1px;
       height: 41px;
       font: 400 13px/20px "San Francisco", sans-serif; }
+      .fm-form__control--card {
+        margin: 0; }
     .fm-form__label {
       padding: 0 0 3px;
       font: 400 13.4px/1.53 "San Francisco", sans-serif;
@@ -1073,7 +1077,8 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box; }
   .py-payment__icon {
-    display: inline-block;
+    display: table-cell;
+    vertical-align: middle;
     padding: 0 8px;
     -webkit-box-sizing: border-box;
             box-sizing: border-box; }
@@ -1171,13 +1176,27 @@
   .dl-delimiter {
     margin: 8px auto;
     font: 400 13px/17px "San Francisco", sans-serif; }
-  .py-payment__img {
-    width: 76px;
-    height: auto; }
+  .py-payment {
+    padding: 23px 0 0; }
+    .py-payment__img {
+      width: 76px;
+      height: auto; }
+      .py-payment__img--visa {
+        width: 43px;
+        height: 14px; }
+      .py-payment__img--mastercard {
+        width: 38px;
+        height: 22px; }
+    .py-payment__icon {
+      padding: 0 6px; }
   .fm-form--popup2 {
     padding: 10px 5px; }
+  .fm-form--popup4 {
+    padding: 10px 2px; }
   .fm-form__group--popup2 {
-    padding: 0 5px 14px 4px; } }
+    padding: 0 5px 14px 4px; }
+  .fm-form__group--checkout {
+    padding: 0 10px 12px 8px; } }
 
 /* ---------------------------------------- */
 /* F I F T H    M O D A L    S T Y L E      */
