@@ -58,6 +58,9 @@
   .pp-heading
     margin: 20px 0
     font: 400 30px/36px $main-font
+    &--purchase
+      font: 400 25.5px/1 $main-font
+
 +comment("modals style")
 
 +comment('first modal style')
@@ -537,12 +540,12 @@
       padding: 20px 0
     &__name
       padding: 17px 0
-      font: 400 15px/0.85 $main-font
+      font: 400 15.5px/0.85 $main-font
     &__btn
       margin-top: 34px 
       padding: 16px
       width: 100%
-      font: 400 13.5px/16px $main-font
+      font: 400 13.5px/0.85 $main-font
       +ls(0.7)
   .tt-ticket
     padding: 19px 0 15px
@@ -609,6 +612,11 @@
 .sh-share
   padding: 15px 0
   margin: 0 -10px
+  &--purchase
+    margin: 0 -20px
+    padding: 2px 0
+    border-color: $share-btn-border
+    color: $share-btn-color
   &__btn
     display: inline-block
     vertical-align: top
@@ -628,11 +636,6 @@
     &--fb
       border: 1px solid $share-btn-fb
       background: url(../img/icons/bd-fb.png) no-repeat scroll 15px 50%
-  &--purchase
-    margin: 0 -20px
-    padding: 2px 0
-    border-color: $share-btn-border
-    color: $share-btn-color
 .tt-cart
   padding: 17px 0 0 19px
   +box
@@ -784,11 +787,9 @@
       height: 41px
       font: 400 13px/20px $main-font
     &__label
-      font-size: 17px
-      line-height: 21px
       padding: 0 0 3px
-
-      font: 300 17px/21px $main-font
+      font: 400 13.4px/1.53 $main-font
+      letter-spacing: normal
   .ct-product
     &__item
       font: 400 13px/17px $main-font
@@ -1076,8 +1077,8 @@
   .rc-purchase
     padding: 0
     &__icon
-      width: 125px
-      height: 125px
+      width: 76px
+      height: 76px
   .bt-btn-offer
     margin: 10px 0
     width: 100%
